@@ -15,13 +15,13 @@ const HeroBanner = () => {
       }}
     >
       <div className='absolute top-[150px] text-black'>
-        <p className='text-4xl uppercase sm:text-6xl md:text-7xl'>
+        <p className='text-4xl uppercase sm:text-6xl md:text-7xl xl:text-8xl'>
           <span className='font-serif font-thin'>Seaside</span>{' '}
           <span className='font-mono'>Travels</span>
         </p>
       </div>
       <a
-        className='active:text-myrtle group absolute bottom-[60px] inline-flex items-center overflow-hidden border border-current bg-white px-8 py-4 text-black focus:outline-none focus:ring'
+        className='active:text-myrtle group absolute bottom-[60px] inline-flex items-center overflow-hidden border border-current bg-white px-10 py-5 text-black focus:outline-none focus:ring'
         href='#'
       >
         <span className='absolute -end-full transition-all group-hover:end-4'>
