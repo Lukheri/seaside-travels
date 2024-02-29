@@ -6,7 +6,7 @@ const HeroBanner = () => {
   return (
     <div className='h-screen'>
       <div
-        className='flex h-[90%] items-center justify-center'
+        className='flex h-[88%] items-center justify-center'
         style={{
           backgroundImage:
             'url("https://static.wixstatic.com/media/11062b_566bc9122e1a4c1d86618be148c495d9~mv2.jpg/v1/fill/w_1291,h_854,fp_0.50_0.60,q_85,usm_0.66_1.00_0.01,enc_auto/Leaning%20On%20Palm%20Tree.jpg")',
@@ -22,7 +22,7 @@ const HeroBanner = () => {
           </p>
         </div>
         <a
-          className='active:text-myrtle group absolute bottom-[calc(10%+60px)] inline-flex items-center overflow-hidden border border-current bg-white px-10 py-5 text-black focus:outline-none focus:ring'
+          className='active:text-myrtle group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-current bg-white px-10 py-5 text-black focus:outline-none focus:ring'
           href='#'
         >
           <span className='absolute -end-full transition-all group-hover:end-4'>
@@ -48,7 +48,7 @@ const HeroBanner = () => {
           </span>
         </a>
       </div>
-      <div className='flex h-[10%] items-center justify-center text-2xl tracking-wider'>
+      <div className='flex h-[12%] items-center justify-center text-2xl tracking-wider'>
         Lorem ipsum dolor sit amet
       </div>
     </div>

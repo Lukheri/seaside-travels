@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-12 py-8 sm:py-12'>
+    <div className='flex flex-col items-center justify-center gap-12 pb-8 sm:pb-12'>
       <div className='flex flex-col items-center justify-center md:flex-row'>
         <div className='w-[65%]'>
           <img
