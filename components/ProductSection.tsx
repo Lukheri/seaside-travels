@@ -31,7 +31,7 @@ const ProductSection = () => {
                     Casual Trainers
                   </h3>
 
-                  <span className='mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <span className='bg-theme-600 mt-1.5 inline-block px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
                   </span>
                 </div>
@@ -51,7 +51,7 @@ const ProductSection = () => {
                     Winter Jumpers
                   </h3>
 
-                  <span className='mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <span className='bg-theme-600 mt-1.5 inline-block px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
                   </span>
                 </div>
@@ -71,7 +71,7 @@ const ProductSection = () => {
                     Skinny Jeans Blue
                   </h3>
 
-                  <span className='mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <span className='bg-theme-600 mt-1.5 inline-block px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
                   </span>
                 </div>
@@ -83,7 +83,7 @@ const ProductSection = () => {
       <section>
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
           <div className='grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch'>
-            <div className='grid place-content-center rounded bg-gray-100 p-6 sm:p-8'>
+            <div className='bg-theme-200 grid place-content-center rounded p-6 sm:p-8'>
               <div className='mx-auto max-w-md text-center lg:text-left'>
                 <header>
                   <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>

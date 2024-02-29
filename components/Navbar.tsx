@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className='sticky top-0 z-10'>
       {/* <div className='bg-myrtle absolute top-0 flex h-[90px] w-full flex-col justify-end'>
         <div className='bg-warm-sand flex h-1/2 items-center justify-between px-4'> */}
-      <div className='bg-base-100 absolute top-0 flex h-[90px] w-full flex-col justify-end'>
+      <div className='bg-primary absolute top-0 flex h-[90px] w-full flex-col justify-end'>
         <div className='bg-accent flex h-1/2 items-center justify-between px-4'>
           <div className='flex gap-4'>
             <a>Home</a>

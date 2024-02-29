@@ -92,7 +92,7 @@ const Volunteer = () => {
 
             <button
               type='submit'
-              className='inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white'
+              className='bg-base-2000 inline-block rounded-lg px-5 py-3 text-sm font-medium text-white'
             >
               Sign in
             </button>

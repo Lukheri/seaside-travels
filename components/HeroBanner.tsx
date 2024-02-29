@@ -22,7 +22,7 @@ const HeroBanner = () => {
           </p>
         </div>
         <a
-          className='active:text-myrtle group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-current bg-white px-10 py-5 text-black focus:outline-none focus:ring'
+          className='active:text-myrtle bg-theme-100 group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-current px-10 py-5 text-black focus:outline-none focus:ring'
           href='#'
         >
           <span className='absolute -end-full transition-all group-hover:end-4'>
