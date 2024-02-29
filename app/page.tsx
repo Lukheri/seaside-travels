@@ -14,7 +14,6 @@ export default function Home() {
       <ProductSection />
       <Volunteer />
       <Donate />
-      <Footer />
     </main>
   )
 }

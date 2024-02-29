@@ -2,22 +2,39 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-12 pb-8 sm:pb-12'>
-      <div className='flex flex-col items-center justify-center md:flex-row'>
-        <div className='w-[65%]'>
-          <img
-            className='w-full'
-            src='https://static.wixstatic.com/media/11062b_7814d7c85f614c3195c0bfb091ef04c6f000.jpg/v1/fill/w_827,h_433,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/11062b_7814d7c85f614c3195c0bfb091ef04c6f000.jpg'
-          ></img>
-        </div>
-        <div className='flex-1 p-5 pr-20 text-2xl'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+    <section>
+      <div className='mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8'>
+        <div className='grid grid-cols-1 lg:h-screen lg:grid-cols-2'>
+          <div className='relative z-10 lg:py-16'>
+            <div className='relative h-64 sm:h-80 lg:h-full'>
+              <img
+                alt=''
+                src='https://static.wixstatic.com/media/11062b_eab1a0942f074249ade26c3a93cbd037~mv2.jpeg/v1/fill/w_1201,h_870,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Coffee%20on%20the%20Beach.jpeg'
+                className='absolute inset-0 h-full w-full object-cover'
+              />
+            </div>
+          </div>
+
+          <div className='bg-theme-primary/25 relative flex items-center'>
+            <span className='lg:bg-theme-primary/25 hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16'></span>
+
+            <div className='p-8 sm:p-16 lg:p-24'>
+              <h2 className='text-2xl font-bold sm:text-3xl'>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempore, debitis.
+              </h2>
+
+              <p className='mt-4 text-gray-600'>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid, molestiae! Quidem est esse numquam odio deleniti,
+                beatae, magni dolores provident quaerat totam eos, aperiam
+                architecto eius quis quibusdam fugiat dicta.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

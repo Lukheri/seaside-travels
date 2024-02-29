@@ -21,6 +21,9 @@ const config: Config = {
         "theme-500": "#0f3c5c",
         "theme-600": "#011a36",
         "theme-700": "#000b25",
+        "theme-primary": "#8fd8d2",
+        "theme-secondary": "#f7c5a8",
+        "theme-accent": "#f5e2c8",
       }
     },
   },
