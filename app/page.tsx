@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Footer from '@/components/Footer'
 import ProductSection from '@/components/ProductSection'
 import Volunteer from '@/components/Volunteer'
+import Donate from '@/components/Donate'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <ProductSection />
       <Volunteer />
+      <Donate />
       <Footer />
     </main>
   )
