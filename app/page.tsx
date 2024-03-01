@@ -6,6 +6,7 @@ import Volunteer from '@/components/Volunteer'
 import Donate from '@/components/Donate'
 import PodcastSection from '@/components/PodcastSection'
 import Testimonials from '@/components/Testimonials'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Testimonials />
       <Volunteer />
       <Donate />
+      <Contact />
     </main>
   )
 }

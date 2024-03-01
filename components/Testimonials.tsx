@@ -3,210 +3,123 @@ import React from 'react'
 const Testimonials = () => {
   return (
     <section className=''>
-      <div className='mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16'>
-        <h2 className='text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
-          Read trusted reviews from our customers
-        </h2>
+      <div className='mx-auto max-w-6xl px-6 py-10'>
+        <p className='text-theme-500 text-xl font-medium '>Testimonials</p>
 
-        <div className='mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8'>
-          <blockquote className='rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8'>
-            <div className='flex items-center gap-4'>
-              <img
-                alt=''
-                src='https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'
-                className='size-14 rounded-full object-cover'
-              />
+        <div>
+          <h1 className='text-2xl font-semibold capitalize text-gray-800 lg:text-3xl'>
+            What our Volunteers are saying
+          </h1>
 
-              <div>
-                <div className='flex justify-center gap-0.5 text-green-500'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                </div>
-
-                <p className='mt-0.5 text-lg font-medium text-gray-900'>
-                  Paul Starr
-                </p>
-              </div>
-            </div>
-
-            <p className='mt-4 text-gray-700'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-              sit rerum incidunt, a consequuntur recusandae ab saepe illo est
-              quia obcaecati neque quibusdam eius accusamus error officiis atque
-              voluptates magnam!
-            </p>
-          </blockquote>
-
-          <blockquote className='rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8'>
-            <div className='flex items-center gap-4'>
-              <img
-                alt=''
-                src='https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'
-                className='size-14 rounded-full object-cover'
-              />
-
-              <div>
-                <div className='flex justify-center gap-0.5 text-green-500'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                </div>
-
-                <p className='mt-0.5 text-lg font-medium text-gray-900'>
-                  Paul Starr
-                </p>
-              </div>
-            </div>
-
-            <p className='mt-4 text-gray-700'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-              sit rerum incidunt, a consequuntur recusandae ab saepe illo est
-              quia obcaecati neque quibusdam eius accusamus error officiis atque
-              voluptates magnam!
-            </p>
-          </blockquote>
-
-          <blockquote className='rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8'>
-            <div className='flex items-center gap-4'>
-              <img
-                alt=''
-                src='https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'
-                className='size-14 rounded-full object-cover'
-              />
-
-              <div>
-                <div className='flex justify-center gap-0.5 text-green-500'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                </div>
-
-                <p className='mt-0.5 text-lg font-medium text-gray-900'>
-                  Paul Starr
-                </p>
-              </div>
-            </div>
-
-            <p className='mt-4 text-gray-700'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-              sit rerum incidunt, a consequuntur recusandae ab saepe illo est
-              quia obcaecati neque quibusdam eius accusamus error officiis atque
-              voluptates magnam!
-            </p>
-          </blockquote>
+          <div className='mx-auto mt-6 flex'>
+            <span className='bg-theme-500 inline-block h-1 w-40 rounded-full'></span>
+            <span className='bg-theme-500 mx-1 inline-block h-1 w-3 rounded-full'></span>
+            <span className='bg-theme-500 inline-block h-1 w-1 rounded-full'></span>
+          </div>
         </div>
+
+        <main className='relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12'>
+          <div className='bg-theme-600 absolute -z-10 w-full rounded-2xl md:h-96'></div>
+
+          <div className='bg-theme-600 w-full rounded-2xl p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12'>
+            <img
+              className='h-24 w-24 rounded-full object-cover shadow-md md:mx-6 md:h-[32rem] md:w-80 md:rounded-2xl lg:h-[36rem] lg:w-[26rem]'
+              src='https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+              alt='client photo'
+            />
+
+            <div className='mt-2 md:mx-6'>
+              <div>
+                <p className='text-xl font-medium tracking-tight text-white'>
+                  Ema Watson
+                </p>
+                <p className='text-theme-200 '>Marketing Manager at Stech</p>
+              </div>
+
+              <p className='mt-4 text-lg leading-relaxed text-white md:text-xl'>
+                {' '}
+                “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempore quibusdam ducimus libero ad tempora doloribus expedita
+                laborum saepe voluptas perferendis delectus assumenda”.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div className='container mx-auto px-6 py-10'>
+        <section className='mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 xl:mt-12 xl:grid-cols-3'>
+          <div className='rounded-lg border p-8'>
+            <p className='leading-loose text-gray-500 '>
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+              quibusdam ducimus libero ad tempora doloribus expedita laborum
+              saepe voluptas perferendis delectus assumenda rerum, culpa aperiam
+              dolorum, obcaecati corrupti aspernatur a.”.
+            </p>
+
+            <div className='-mx-2 mt-8 flex items-center'>
+              <img
+                className='mx-2 h-14 w-14 shrink-0 rounded-full object-cover ring-4 ring-gray-300'
+                src='https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
+                alt=''
+              />
+
+              <div className='mx-2'>
+                <h1 className='font-semibold text-gray-800'>Robert</h1>
+                <span className='text-sm text-gray-500'>
+                  CTO, Robert Consultency
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className='bg-theme-500 rounded-lg border border-transparent p-8'>
+            <p className='leading-loose text-white'>
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+              quibusdam ducimus libero ad tempora doloribus expedita laborum
+              saepe voluptas perferendis delectus assumenda rerum, culpa aperiam
+              dolorum, obcaecati corrupti aspernatur a.”.
+            </p>
+
+            <div className='-mx-2 mt-8 flex items-center'>
+              <img
+                className='ring-theme-200 mx-2 h-14 w-14 shrink-0 rounded-full object-cover ring-4'
+                src='https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
+                alt=''
+              />
+
+              <div className='mx-2'>
+                <h1 className='font-semibold text-white'>Jeny Doe</h1>
+                <span className='text-theme-200 text-sm'>
+                  CEO, Jeny Consultency
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className='rounded-lg border p-8'>
+            <p className='text-gray-5 leading-loose'>
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+              quibusdam ducimus libero ad tempora doloribus expedita laborum
+              saepe voluptas perferendis delectus assumenda rerum, culpa aperiam
+              dolorum, obcaecati corrupti aspernatur a.”.
+            </p>
+
+            <div className='-mx-2 mt-8 flex items-center'>
+              <img
+                className='mx-2 h-14 w-14 shrink-0 rounded-full object-cover ring-4 ring-gray-300'
+                src='https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+                alt=''
+              />
+
+              <div className='mx-2'>
+                <h1 className='font-semibold text-gray-800'>Ema Watson </h1>
+                <span className='text-sm text-gray-500'>
+                  Marketing Manager at Stech
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   )
