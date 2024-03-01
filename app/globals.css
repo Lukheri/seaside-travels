@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-banner-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.hero-banner-wave svg {
+  position: relative;
+  display: block;
+  width: calc(153% + 1.3px);
+  height: 174px;
+  transform: rotateY(180deg);
+}
+
+.hero-banner-wave .shape-fill {
+  fill: #8fd8d2;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("../assets/layered-waves-haikei.svg");
+}

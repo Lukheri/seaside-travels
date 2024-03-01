@@ -19,27 +19,12 @@ const PodcastSection = () => {
 
             <div className='mt-4 md:mt-8'>
               <a
-                className='active:text-myrtle bg-theme-100 group inline-flex items-center overflow-hidden border border-current px-10 py-5 text-black focus:outline-none focus:ring'
+                className='text-theme-500 active:text-theme-500 group relative inline-block text-sm font-medium focus:outline-none focus:ring'
                 href='#'
               >
-                <span className='absolute -end-full transition-all group-hover:end-4'>
-                  <svg
-                    className='size-5 rtl:rotate-180'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      d='M17 8l4 4m0 0l-4 4m4-4H3'
-                    />
-                  </svg>
-                </span>
+                <span className='bg-theme-500 absolute inset-0 translate-x-0 translate-y-0 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
 
-                <span className='text-xs font-medium transition-all group-hover:me-4 sm:text-sm'>
+                <span className='relative block border border-current bg-white px-8 py-3'>
                   {' '}
                   Listen on Youtube{' '}
                 </span>
@@ -47,27 +32,12 @@ const PodcastSection = () => {
             </div>
             <div className='mt-4 md:mt-8'>
               <a
-                className='active:text-myrtle bg-theme-100 group inline-flex items-center overflow-hidden border border-current px-10 py-5 text-black focus:outline-none focus:ring'
+                className='text-theme-500 active:text-theme-500 group relative inline-block text-sm font-medium focus:outline-none focus:ring'
                 href='#'
               >
-                <span className='absolute -end-full transition-all group-hover:end-4'>
-                  <svg
-                    className='size-5 rtl:rotate-180'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      d='M17 8l4 4m0 0l-4 4m4-4H3'
-                    />
-                  </svg>
-                </span>
+                <span className='bg-theme-500 absolute inset-0 translate-x-0 translate-y-0 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
 
-                <span className='text-xs font-medium transition-all group-hover:me-4 sm:text-sm'>
+                <span className='relative block border border-current bg-white px-8 py-3'>
                   {' '}
                   Listen on Spotify{' '}
                 </span>
