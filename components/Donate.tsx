@@ -172,14 +172,14 @@ const Donate = () => {
                 </div>
 
                 <div>
-                  <label className='sr-only' htmlFor='name'>
+                  <label className='sr-only' htmlFor='amount'>
                     Enter amount
                   </label>
                   <input
                     className='border-theme-400 w-full rounded-lg p-3 text-sm'
                     placeholder='Enter amount'
                     type='text'
-                    id='name'
+                    id='amount'
                   />
                 </div>
 

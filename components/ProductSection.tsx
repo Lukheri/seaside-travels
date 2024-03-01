@@ -1,8 +1,10 @@
 import React from 'react'
+import Marquee from './Marquee'
 
 const ProductSection = () => {
   return (
     <>
+      <Marquee />
       <section>
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
           <header className='text-center'>

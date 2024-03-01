@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import Announcements from './Announcements'
 
 const Navbar = () => {
   return (
@@ -6,6 +8,7 @@ const Navbar = () => {
       {/* <div className='bg-myrtle absolute top-0 flex h-[90px] w-full flex-col justify-end'>
         <div className='bg-warm-sand flex h-1/2 items-center justify-between px-4'> */}
       <div className='bg-primary absolute top-0 flex h-[90px] w-full flex-col justify-end'>
+        <Announcements />
         <div className='bg-accent flex h-1/2 items-center justify-between px-4'>
           <div className='flex gap-4'>
             <a>Home</a>
