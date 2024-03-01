@@ -14,7 +14,7 @@ const Contact = () => {
               <p className='-mx-2 flex items-start'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='mx-2 h-6 w-6 text-blue-500'
+                  className='text-theme-500 mx-2 h-6 w-6'
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
@@ -40,7 +40,7 @@ const Contact = () => {
               <p className='-mx-2 flex items-start'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='mx-2 h-6 w-6 text-blue-500 '
+                  className='text-theme-500 mx-2 h-6 w-6 '
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
@@ -61,7 +61,7 @@ const Contact = () => {
               <p className='-mx-2 flex items-start'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='mx-2 h-6 w-6 text-blue-500 '
+                  className='text-theme-500 mx-2 h-6 w-6 '
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
@@ -85,7 +85,7 @@ const Contact = () => {
 
               <div className='-mx-1.5 mt-4 flex '>
                 <a
-                  className='mx-1.5 transform text-gray-400 transition-colors duration-300 hover:text-blue-500 '
+                  className='hover:text-theme-500 mx-1.5 transform text-gray-400 transition-colors duration-300 '
                   href='#'
                 >
                   <svg
@@ -99,7 +99,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  className='mx-1.5 transform text-gray-400 transition-colors duration-300 hover:text-blue-500 '
+                  className='hover:text-theme-500 mx-1.5 transform text-gray-400 transition-colors duration-300 '
                   href='#'
                 >
                   <svg
@@ -124,7 +124,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  className='mx-1.5 transform text-gray-400 transition-colors duration-300 hover:text-blue-500 '
+                  className='hover:text-theme-500 mx-1.5 transform text-gray-400 transition-colors duration-300 '
                   href='#'
                 >
                   <svg
@@ -141,7 +141,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  className='mx-1.5 transform text-gray-400 transition-colors duration-300 hover:text-blue-500 '
+                  className='hover:text-theme-500 mx-1.5 transform text-gray-400 transition-colors duration-300 '
                   href='#'
                 >
                   <svg
@@ -174,7 +174,7 @@ const Contact = () => {
                   <input
                     type='text'
                     placeholder='John Doe'
-                    className='mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 '
+                    className='focus:border-theme-400 focus:ring-theme-400 mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring focus:ring-opacity-40 '
                   />
                 </div>
 
@@ -185,7 +185,7 @@ const Contact = () => {
                   <input
                     type='email'
                     placeholder='johndoe@example.com'
-                    className='mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 '
+                    className='focus:border-theme-400 focus:ring-theme-400 mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring focus:ring-opacity-40 '
                   />
                 </div>
 
@@ -194,12 +194,12 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
-                    className='mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 md:h-48 '
+                    className='focus:border-theme-400 focus:ring-theme-400 mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring focus:ring-opacity-40 md:h-48 '
                     placeholder='Message'
                   ></textarea>
                 </div>
 
-                <button className='mt-6 w-full transform rounded-md bg-blue-500 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50'>
+                <button className='bg-theme-500 hover:bg-theme-400 focus:ring-theme-300 mt-6 w-full transform rounded-md px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 focus:outline-none focus:ring focus:ring-opacity-50'>
                   get in touch
                 </button>
               </form>
