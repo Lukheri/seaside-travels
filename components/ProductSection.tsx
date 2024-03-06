@@ -1,5 +1,6 @@
 import React from 'react'
 import Marquee from './Marquee'
+import Image from 'next/image'
 
 const ProductSection = () => {
   return (
@@ -7,7 +8,7 @@ const ProductSection = () => {
       <section>
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
           <div className='grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch'>
-            <div className='bg-theme-200 grid place-content-center rounded p-6 sm:p-8'>
+            <div className='grid place-content-center rounded bg-theme-200 p-6 sm:p-8'>
               <div className='mx-auto max-w-md text-center lg:text-left'>
                 <header>
                   <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>
@@ -34,22 +35,24 @@ const ProductSection = () => {
                 <li>
                   <a href='#' className='group block'>
                     <div className='relative h-[350px] sm:h-[450px]'>
-                      <img
-                        src='https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+                      <Image
+                        src='/products/Mug/turtle 1.png'
                         alt=''
+                        fill
                         className='absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0'
                       />
 
-                      <img
-                        src='https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+                      <Image
+                        src='/products/Mug/turtle.png'
                         alt=''
+                        fill
                         className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
                       />
                     </div>
 
                     <div className='mt-3'>
                       <h3 className='font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4'>
-                        Small Headphones
+                        Mug
                       </h3>
 
                       <p className='mt-1 text-sm text-gray-700'>$150</p>
@@ -60,22 +63,24 @@ const ProductSection = () => {
                 <li>
                   <a href='#' className='group block overflow-hidden'>
                     <div className='relative h-[350px] sm:h-[450px]'>
-                      <img
-                        src='https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                      <Image
+                        src='/products/Long sleeves/turtle 1.png'
                         alt=''
+                        fill
                         className='absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0'
                       />
 
-                      <img
-                        src='https://images.unsplash.com/photo-1523381140794-a1eef18a37c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjQ2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
+                      <Image
+                        src='/products/Long sleeves/waves of change ver 2.png'
                         alt=''
+                        fill
                         className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
                       />
                     </div>
 
                     <div className='relative pt-3'>
                       <h3 className='text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4'>
-                        Limited Edition Sports Trainer
+                        Long Sleeves
                       </h3>
 
                       <p className='mt-1.5 tracking-wide text-gray-900'>
@@ -108,17 +113,17 @@ const ProductSection = () => {
             <li>
               <a href='#' className='group relative block'>
                 <img
-                  src='https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+                  src='/products/Tote bag/turtle.png'
                   alt=''
                   className='aspect-square w-full object-cover transition duration-500 group-hover:opacity-90'
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
-                  <h3 className='text-xl font-medium text-white'>
-                    Casual Trainers
+                  <h3 className='text-xl font-medium text-theme-700'>
+                    Tote bags
                   </h3>
 
-                  <span className='bg-theme-600 mt-1.5 inline-block px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
                   </span>
                 </div>
@@ -128,17 +133,15 @@ const ProductSection = () => {
             <li>
               <a href='#' className='group relative block'>
                 <img
-                  src='https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+                  src='/products/Shirt/shirt turtle.png'
                   alt=''
                   className='aspect-square w-full object-cover transition duration-500 group-hover:opacity-90'
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
-                  <h3 className='text-xl font-medium text-white'>
-                    Winter Jumpers
-                  </h3>
+                  <h3 className='text-xl font-medium text-theme-700'>Shirts</h3>
 
-                  <span className='bg-theme-600 mt-1.5 inline-block px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
                   </span>
                 </div>
@@ -148,17 +151,17 @@ const ProductSection = () => {
             <li className='lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1'>
               <a href='#' className='group relative block'>
                 <img
-                  src='https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80'
+                  src='/products/Hoodie/hoodie ver 3.png'
                   alt=''
                   className='aspect-square w-full object-cover transition duration-500 group-hover:opacity-90'
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
-                  <h3 className='text-xl font-medium text-white'>
-                    Skinny Jeans Blue
+                  <h3 className='text-xl font-medium text-theme-700'>
+                    Hoodies
                   </h3>
 
-                  <span className='bg-theme-600 mt-1.5 inline-block px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
                   </span>
                 </div>
