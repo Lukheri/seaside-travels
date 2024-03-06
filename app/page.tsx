@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import HeroBanner from '@/components/HeroBanner'
 import About from '@/components/About'
 import ProductSection from '@/components/ProductSection'

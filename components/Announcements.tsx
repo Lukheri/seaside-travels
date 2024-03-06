@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from 'react'
 import Swiper from 'swiper'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
@@ -32,7 +33,7 @@ const Announcements = () => {
   }, [])
 
   return (
-    <div className='bg-primary px-4 py-3'>
+    <div className='bg-primary px-4 py-2'>
       <div className='mx-auto flex max-w-3xl items-center justify-center'>
         <button
           className='swiper-prev-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition'

@@ -1,22 +1,41 @@
-'use client'
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Announcements from './Announcements'
+import Logo from '../assets/logo.png'
+import Image from 'next/image'
 
 const Navbar = () => {
   return (
     <div className='sticky top-0 z-50'>
-      {/* <div className='bg-myrtle absolute top-0 flex h-[90px] w-full flex-col justify-end'>
-        <div className='bg-warm-sand flex h-1/2 items-center justify-between px-4'> */}
-      <div className='bg-primary absolute top-0 flex h-[90px] w-full flex-col justify-end'>
+      <div className='absolute top-0 flex h-[140px] w-full flex-col justify-end bg-primary'>
         <Announcements />
-        <div className='bg-accent flex h-1/2 items-center justify-between px-4'>
-          <div className='flex gap-4'>
-            <a>Home</a>
-            <a>Shop</a>
-            <a>Donate</a>
-            <a>Podcast</a>
+        <div className='glass relative flex h-[120px] items-center justify-between bg-accent px-4'>
+          <Image
+            src={Logo}
+            alt='logo'
+            width={90}
+            height={90}
+            className='cursor-pointer'
+          />
+          <div className='absolute left-1/2 flex -translate-x-1/2 gap-6'>
+            {/* <button className='-px-1 -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-theme-500 bg-transparent px-2 py-2 text-center text-theme-600 focus:outline-none sm:px-4 '>
+              <span className='mx-1 text-sm sm:text-base'>Merch</span>
+            </button> */}
+            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+              <span className='mx-1 text-sm sm:text-base'>Merch</span>
+            </button>
+
+            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+              <span className='mx-1 text-sm sm:text-base'>Events</span>
+            </button>
+
+            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+              <span className='mx-1 text-sm sm:text-base'>Podcast</span>
+            </button>
+
+            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+              <span className='mx-1 text-sm sm:text-base'>Donate</span>
+            </button>
           </div>
-          <div>{/* to be added */}</div>
         </div>
       </div>
     </div>
