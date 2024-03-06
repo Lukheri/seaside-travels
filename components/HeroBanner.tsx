@@ -10,7 +10,7 @@ const HeroBanner = () => {
           className='flex h-full items-center justify-center'
           style={{
             backgroundImage:
-              'url("https://static.wixstatic.com/media/11062b_566bc9122e1a4c1d86618be148c495d9~mv2.jpg/v1/fill/w_1291,h_854,fp_0.50_0.60,q_85,usm_0.66_1.00_0.01,enc_auto/Leaning%20On%20Palm%20Tree.jpg")',
+              'url("https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -46,7 +46,7 @@ const HeroBanner = () => {
             </p>
           </div>
           <a
-            className='active:text-myrtle bg-theme-100 group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-current px-10 py-5 text-black focus:outline-none focus:ring'
+            className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-current bg-theme-100 px-10 py-5 text-black focus:outline-none focus:ring active:text-myrtle'
             href='#'
           >
             <span className='absolute -end-full transition-all group-hover:end-4'>

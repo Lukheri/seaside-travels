@@ -9,14 +9,14 @@ const About = () => {
             <div className='relative h-64 sm:h-80 lg:h-full'>
               <img
                 alt=''
-                src='https://static.wixstatic.com/media/11062b_eab1a0942f074249ade26c3a93cbd037~mv2.jpeg/v1/fill/w_1201,h_870,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Coffee%20on%20the%20Beach.jpeg'
+                src='https://images.unsplash.com/photo-1615175225908-141ce7144435?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                 className='absolute inset-0 h-full w-full object-cover'
               />
             </div>
           </div>
 
-          <div className='bg-theme-primary/25 relative flex items-center'>
-            <span className='lg:bg-theme-primary/25 hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16'></span>
+          <div className='relative flex items-center bg-theme-primary/25'>
+            <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
             <div className='p-8 sm:p-16 lg:p-24'>
               <h2 className='text-2xl font-bold sm:text-3xl'>
