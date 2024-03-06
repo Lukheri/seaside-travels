@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react'
 import Swiper from 'swiper'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
 
 const Announcements = () => {
   useEffect(() => {
     const swiper = new Swiper('.swiper', {
-      modules: [Navigation, Pagination],
+      modules: [Autoplay, Navigation, Pagination],
       effect: 'fade',
       loop: true,
       autoplay: {
@@ -55,30 +56,27 @@ const Announcements = () => {
           <div className='swiper-wrapper'>
             <div className='swiper-slide'>
               <p className='text-center text-sm font-medium text-gray-900'>
-                Love our merch?
+                Love our merch?{' '}
                 <a href='#' className='block underline sm:inline-block'>
-                  {' '}
-                  Check out whats new!{' '}
+                  Check out whats new!
                 </a>
               </p>
             </div>
 
             <div className='swiper-slide'>
               <p className='text-center text-sm font-medium text-gray-900'>
-                Love Tailwind CSS?
+                Get ready for new events.{' '}
                 <a href='#' className='block underline sm:inline-block'>
-                  {' '}
-                  Check out this new course!{' '}
+                  Learn more!
                 </a>
               </p>
             </div>
 
             <div className='swiper-slide'>
               <p className='text-center text-sm font-medium text-gray-900'>
-                Love Laravel?
+                Listen to our podcast!{' '}
                 <a href='#' className='block underline sm:inline-block'>
-                  {' '}
-                  Check out this new course!{' '}
+                  Listen here!
                 </a>
               </p>
             </div>
