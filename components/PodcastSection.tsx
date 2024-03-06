@@ -19,10 +19,11 @@ const PodcastSection = () => {
 
             <div className='mt-4 md:mt-8'>
               <a
-                className='text-theme-500 active:text-theme-500 group relative inline-block text-sm font-medium focus:outline-none focus:ring'
-                href='#'
+                className='group relative inline-block text-sm font-medium text-theme-500 focus:outline-none focus:ring active:text-theme-500'
+                href='https://www.youtube.com/@WavesofWisdomFL'
+                target='_blank'
               >
-                <span className='bg-theme-500 absolute inset-0 translate-x-0 translate-y-0 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
+                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
 
                 <span className='relative flex items-center justify-center gap-4 border border-current bg-white px-8 py-3'>
                   {' '}
@@ -66,10 +67,11 @@ const PodcastSection = () => {
             </div>
             <div className='mt-4 md:mt-8'>
               <a
-                className='text-theme-500 active:text-theme-500 group relative inline-block text-sm font-medium focus:outline-none focus:ring'
-                href='#'
+                className='group relative inline-block text-sm font-medium text-theme-500 focus:outline-none focus:ring active:text-theme-500'
+                href='https://podcasters.spotify.com/pod/show/waves-of-wisdom'
+                target='_blank'
               >
-                <span className='bg-theme-500 absolute inset-0 translate-x-0 translate-y-0 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
+                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
 
                 <span className='relative flex items-center justify-center gap-4 border border-current bg-white px-8 py-3'>
                   {' '}
@@ -110,35 +112,35 @@ const PodcastSection = () => {
           <article className='rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8'>
             <div className='flex items-start sm:gap-8'>
               <div
-                className='sm:border-theme-500 hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2'
+                className='hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-theme-500'
                 aria-hidden='true'
               >
                 <div className='flex items-center gap-1'>
-                  <span className='bg-theme-500 h-8 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-6 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-4 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-6 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-8 w-0.5 rounded-full'></span>
+                  <span className='h-8 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-6 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-4 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-6 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-8 w-0.5 rounded-full bg-theme-500'></span>
                 </div>
               </div>
 
               <div>
-                <strong className='border-theme-500 bg-theme-500 rounded border px-3 py-1.5 text-[10px] font-medium text-white'>
-                  Episode #101
+                <strong className='rounded border border-theme-500 bg-theme-500 px-3 py-1.5 text-[10px] font-medium text-white'>
+                  Pilot Episode
                 </strong>
 
                 <h3 className='mt-4 text-lg font-medium sm:text-xl'>
                   <a href='#' className='hover:underline'>
                     {' '}
-                    Some Interesting Podcast Title{' '}
+                    Waves of Wisdom: Pilot{' '}
                   </a>
                 </h3>
 
                 <p className='mt-1 text-sm text-gray-700'>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam nulla amet voluptatum sit rerum, atque, quo culpa ut
-                  necessitatibus eius suscipit eum accusamus, aperiam voluptas
-                  exercitationem facere aliquid fuga. Sint.
+                  Welcome to the inaugural episode of Waves of Wisdom, the
+                  podcast brought to you by Seaside Therapy, where we ride the
+                  currents of knowledge and empathy to explore the vast ocean of
+                  neurodiversity.
                 </p>
 
                 <div className='mt-4 sm:flex sm:items-center sm:gap-2'>
@@ -158,7 +160,7 @@ const PodcastSection = () => {
                       ></path>
                     </svg>
 
-                    <p className='text-xs font-medium'>48:32 minutes</p>
+                    <p className='text-xs font-medium'>18:53 minutes</p>
                   </div>
 
                   <span className='hidden sm:block' aria-hidden='true'>
@@ -168,15 +170,11 @@ const PodcastSection = () => {
                   <p className='mt-2 text-xs font-medium text-gray-500 sm:mt-0'>
                     Featuring{' '}
                     <a href='#' className='underline hover:text-gray-700'>
-                      Barry
+                      Ariel Price
                     </a>
-                    ,
+                    , and{' '}
                     <a href='#' className='underline hover:text-gray-700'>
-                      Sandra
-                    </a>{' '}
-                    and
-                    <a href='#' className='underline hover:text-gray-700'>
-                      August
+                      Danielle Van Curen
                     </a>
                   </p>
                 </div>
@@ -186,35 +184,35 @@ const PodcastSection = () => {
           <article className='rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8'>
             <div className='flex items-start sm:gap-8'>
               <div
-                className='sm:border-theme-500 hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2'
+                className='hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-theme-500'
                 aria-hidden='true'
               >
                 <div className='flex items-center gap-1'>
-                  <span className='bg-theme-500 h-8 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-6 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-4 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-6 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-8 w-0.5 rounded-full'></span>
+                  <span className='h-8 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-6 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-4 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-6 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-8 w-0.5 rounded-full bg-theme-500'></span>
                 </div>
               </div>
 
               <div>
-                <strong className='border-theme-500 bg-theme-500 rounded border px-3 py-1.5 text-[10px] font-medium text-white'>
-                  Episode #101
+                <strong className='rounded border border-theme-500 bg-theme-500 px-3 py-1.5 text-[10px] font-medium text-white'>
+                  Pilot Episode
                 </strong>
 
                 <h3 className='mt-4 text-lg font-medium sm:text-xl'>
                   <a href='#' className='hover:underline'>
                     {' '}
-                    Some Interesting Podcast Title{' '}
+                    Waves of Wisdom: Pilot{' '}
                   </a>
                 </h3>
 
                 <p className='mt-1 text-sm text-gray-700'>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam nulla amet voluptatum sit rerum, atque, quo culpa ut
-                  necessitatibus eius suscipit eum accusamus, aperiam voluptas
-                  exercitationem facere aliquid fuga. Sint.
+                  Welcome to the inaugural episode of Waves of Wisdom, the
+                  podcast brought to you by Seaside Therapy, where we ride the
+                  currents of knowledge and empathy to explore the vast ocean of
+                  neurodiversity.
                 </p>
 
                 <div className='mt-4 sm:flex sm:items-center sm:gap-2'>
@@ -234,7 +232,7 @@ const PodcastSection = () => {
                       ></path>
                     </svg>
 
-                    <p className='text-xs font-medium'>48:32 minutes</p>
+                    <p className='text-xs font-medium'>18:53 minutes</p>
                   </div>
 
                   <span className='hidden sm:block' aria-hidden='true'>
@@ -244,53 +242,49 @@ const PodcastSection = () => {
                   <p className='mt-2 text-xs font-medium text-gray-500 sm:mt-0'>
                     Featuring{' '}
                     <a href='#' className='underline hover:text-gray-700'>
-                      Barry
+                      Ariel Price
                     </a>
-                    ,
+                    , and{' '}
                     <a href='#' className='underline hover:text-gray-700'>
-                      Sandra
-                    </a>{' '}
-                    and
-                    <a href='#' className='underline hover:text-gray-700'>
-                      August
+                      Danielle Van Curen
                     </a>
                   </p>
                 </div>
               </div>
             </div>
-          </article>
+          </article>{' '}
           <article className='rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8'>
             <div className='flex items-start sm:gap-8'>
               <div
-                className='sm:border-theme-500 hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2'
+                className='hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-theme-500'
                 aria-hidden='true'
               >
                 <div className='flex items-center gap-1'>
-                  <span className='bg-theme-500 h-8 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-6 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-4 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-6 w-0.5 rounded-full'></span>
-                  <span className='bg-theme-500 h-8 w-0.5 rounded-full'></span>
+                  <span className='h-8 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-6 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-4 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-6 w-0.5 rounded-full bg-theme-500'></span>
+                  <span className='h-8 w-0.5 rounded-full bg-theme-500'></span>
                 </div>
               </div>
 
               <div>
-                <strong className='border-theme-500 bg-theme-500 rounded border px-3 py-1.5 text-[10px] font-medium text-white'>
-                  Episode #101
+                <strong className='rounded border border-theme-500 bg-theme-500 px-3 py-1.5 text-[10px] font-medium text-white'>
+                  Pilot Episode
                 </strong>
 
                 <h3 className='mt-4 text-lg font-medium sm:text-xl'>
                   <a href='#' className='hover:underline'>
                     {' '}
-                    Some Interesting Podcast Title{' '}
+                    Waves of Wisdom: Pilot{' '}
                   </a>
                 </h3>
 
                 <p className='mt-1 text-sm text-gray-700'>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam nulla amet voluptatum sit rerum, atque, quo culpa ut
-                  necessitatibus eius suscipit eum accusamus, aperiam voluptas
-                  exercitationem facere aliquid fuga. Sint.
+                  Welcome to the inaugural episode of Waves of Wisdom, the
+                  podcast brought to you by Seaside Therapy, where we ride the
+                  currents of knowledge and empathy to explore the vast ocean of
+                  neurodiversity.
                 </p>
 
                 <div className='mt-4 sm:flex sm:items-center sm:gap-2'>
@@ -310,7 +304,7 @@ const PodcastSection = () => {
                       ></path>
                     </svg>
 
-                    <p className='text-xs font-medium'>48:32 minutes</p>
+                    <p className='text-xs font-medium'>18:53 minutes</p>
                   </div>
 
                   <span className='hidden sm:block' aria-hidden='true'>
@@ -320,15 +314,11 @@ const PodcastSection = () => {
                   <p className='mt-2 text-xs font-medium text-gray-500 sm:mt-0'>
                     Featuring{' '}
                     <a href='#' className='underline hover:text-gray-700'>
-                      Barry
+                      Ariel Price
                     </a>
-                    ,
+                    , and{' '}
                     <a href='#' className='underline hover:text-gray-700'>
-                      Sandra
-                    </a>{' '}
-                    and
-                    <a href='#' className='underline hover:text-gray-700'>
-                      August
+                      Danielle Van Curen
                     </a>
                   </p>
                 </div>
