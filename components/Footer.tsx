@@ -1,10 +1,12 @@
 import React from 'react'
+import Logo from '../assets/logo.png'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
     <footer className='bg-gray-100'>
       <div className='mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8'>
-        <div className='flex justify-center text-teal-600'>
+        {/* <div className='flex justify-center text-teal-600'>
           <svg
             className='h-8'
             viewBox='0 0 118 24'
@@ -52,7 +54,14 @@ const Footer = () => {
               fill='currentColor'
             />
           </svg>
-        </div>
+        </div> */}
+        <Image
+          src={Logo}
+          alt='logo'
+          height={90}
+          width={90}
+          className='mx-auto'
+        />
 
         <p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
