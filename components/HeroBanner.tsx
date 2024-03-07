@@ -1,6 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from 'next/image'
+import localFont from 'next/font/local'
+// import DukeCharmingFont from '@/assets/fonts/Duke Charming DEMO.otf'
+
+const myFont = localFont({
+  src: '../assets/fonts/Duke Charming DEMO.otf',
+  weight: '300',
+  display: 'swap',
+})
 
 const HeroBanner = () => {
   return (
@@ -40,9 +48,11 @@ const HeroBanner = () => {
             </svg>
           </div>
           <div className='absolute top-[150px] text-black'>
-            <p className='text-4xl uppercase sm:text-6xl md:text-7xl xl:text-8xl'>
-              <span className='font-serif font-thin'>Seaside</span>{' '}
-              <span className='font-mono'>Travels</span>
+            <p className='text-4xl text-theme-700 sm:text-6xl md:text-7xl xl:text-9xl'>
+              <span className={`${myFont.className}`}>Seaside</span>{' '}
+              <span className={`${myFont.className} -mt-9 block text-right`}>
+                travels
+              </span>
             </p>
           </div>
           <a

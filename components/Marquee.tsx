@@ -5,54 +5,54 @@ const Marquee = () => {
     <div className='logos'>
       <div className='logos-slide'>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
       </div>
       <div className='logos-slide'>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
         <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
-          NEW IN!
+          NEW ARRIVALS!
         </p>
       </div>
     </div>
