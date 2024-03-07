@@ -2,7 +2,7 @@ import React from 'react'
 
 const PodcastSection = () => {
   return (
-    <section>
+    <section id='podcast'>
       <div className='mx-auto grid max-w-screen-2xl grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8'>
         <div className=' p-8 md:p-12 lg:px-16 lg:py-24'>
           <div className='mx-auto max-w-xl text-center'>

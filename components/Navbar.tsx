@@ -1,9 +1,17 @@
+'use client'
 import React, { useCallback, useEffect, useState } from 'react'
 import Announcements from './Announcements'
-import Logo from '../assets/logo.png'
+import Logo from '@/assets/logo.png'
 import Image from 'next/image'
 
 const Navbar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <div className='sticky top-0 z-50'>
       <div className='absolute top-0 flex h-[140px] w-full flex-col justify-end bg-primary'>
@@ -20,19 +28,31 @@ const Navbar = () => {
             {/* <button className='-px-1 -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-theme-500 bg-transparent px-2 py-2 text-center text-theme-600 focus:outline-none sm:px-4 '>
               <span className='mx-1 text-sm sm:text-base'>Merch</span>
             </button> */}
-            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+            <button
+              onClick={() => scrollToSection('merch')}
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
               <span className='mx-1 text-sm sm:text-base'>Merch</span>
             </button>
 
-            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+            <button
+              onClick={() => scrollToSection('events')}
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
               <span className='mx-1 text-sm sm:text-base'>Events</span>
             </button>
 
-            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+            <button
+              onClick={() => scrollToSection('podcast')}
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
               <span className='mx-1 text-sm sm:text-base'>Podcast</span>
             </button>
 
-            <button className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'>
+            <button
+              onClick={() => scrollToSection('donate')}
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
               <span className='mx-1 text-sm sm:text-base'>Donate</span>
             </button>
           </div>
