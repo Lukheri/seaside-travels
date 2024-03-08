@@ -50,20 +50,25 @@ const HeroBanner = () => {
               ></path>
             </svg>
           </div>
-          <div className='absolute top-[150px] text-black'>
-            <p className='text-border-white text-4xl text-theme-700 sm:text-6xl md:text-7xl xl:text-9xl'>
+          <div className='absolute top-[160px] text-black xl:top-[150px]'>
+            <p className='text-border-white text-center text-6xl text-theme-700 md:text-7xl xl:text-9xl'>
               <span className={`${myFont.className}`}>Seaside</span>{' '}
-              <span className={`${myFont.className} -mt-9 block text-right`}>
+              <span
+                className={`${myFont.className} -mt-4 block md:-mt-6 lg:-mt-9 xl:text-right`}
+              >
                 travels
               </span>
             </p>
-            <p className={`text-center font-sans text-xl text-theme-700`}>
+            <p
+              className={`mt-4 text-center font-sans text-lg italic text-theme-700 md:text-2xl`}
+            >
               Diverse Abilities, Shared Horizons
             </p>
           </div>
           <a
             className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-theme-400 bg-theme-accent px-10 py-5 text-black focus:outline-none focus:ring active:text-myrtle'
-            href='#'
+            href='https://www.etsy.com/shop/seasidetherapy/?etsrc=sdt'
+            target='_blank'
           >
             <span className='absolute -end-full transition-all group-hover:end-4'>
               <svg
@@ -90,8 +95,8 @@ const HeroBanner = () => {
         </div>
       </div>
       <div className='spacer layer1 relative flex items-center justify-center'>
-        <div className='absolute bottom-[15%] text-2xl tracking-wider'>
-          Lorem ipsum dolor sit amet
+        <div className='absolute bottom-0 text-3xl tracking-wider'>
+          About Us
         </div>
       </div>
     </>

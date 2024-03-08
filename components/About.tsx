@@ -20,15 +20,26 @@ const About = () => {
 
             <div className='p-8 sm:p-16 lg:p-24'>
               <h2 className='text-2xl font-bold sm:text-3xl'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tempore, debitis.
+                Started with Ariel, therapist, and her team seeing gaps in the
+                resources and care locally for our children and families with
+                unique abilities.
               </h2>
 
               <p className='mt-4 text-gray-600'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, molestiae! Quidem est esse numquam odio deleniti,
-                beatae, magni dolores provident quaerat totam eos, aperiam
-                architecto eius quis quibusdam fugiat dicta.
+                Ariel and her family love to travel the world and is always
+                pondering on her trips about how these adventures could be
+                accessible for children and their families. the idea is that
+                funding will be raised and mostly volunteer run by people
+                educated on care for those with special needs (healthcare
+                workers, teachers, community members wanting to learn etc) who
+                will accompany these children on trips both locally and
+                internationally in the future. families will be able to travel
+                along, or enjoy date night or adults day out knowing their
+                children are in safe hands. from there, it was also noted a
+                growing need for community outreach and education. Support
+                groups and outreach and programming are being developed for
+                children with unique abilities, their caregivers, their
+                siblings, grieving parents and beyond.
               </p>
             </div>
           </div>
