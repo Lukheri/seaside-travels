@@ -22,7 +22,8 @@ const ProductSection = () => {
                 </header>
 
                 <a
-                  href='#'
+                  href='https://www.etsy.com/shop/seasidetherapy/?etsrc=sdt'
+                  target='_blank'
                   className='mt-8 inline-block rounded border border-gray-900 bg-gray-900 px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring'
                 >
                   Shop All
@@ -123,9 +124,13 @@ const ProductSection = () => {
                     Tote bags
                   </h3>
 
-                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <a
+                    href='https://www.etsy.com/listing/1690174819/be-happy-in-your-own-shell-seaside?click_key=a619a74275c7d5fd8eef756382f569156360f1f9%3A1690174819&click_sum=e1cde8f6&ref=shop_home_active_15'
+                    target='_blank'
+                    className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'
+                  >
                     Shop Now
-                  </span>
+                  </a>
                 </div>
               </a>
             </li>
@@ -141,9 +146,13 @@ const ProductSection = () => {
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
                   <h3 className='text-xl font-medium text-theme-700'>Shirts</h3>
 
-                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <a
+                    href='https://www.etsy.com/listing/1691589503/unisex-jersey-short-sleeve-tee-seaside?click_key=3a12aba236ae4fa6b1283c9e7c08f42f72d7526d%3A1691589503&click_sum=6f667042&ref=shop_home_active_1'
+                    target='_blank'
+                    className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'
+                  >
                     Shop Now
-                  </span>
+                  </a>
                 </div>
               </a>
             </li>
@@ -157,45 +166,19 @@ const ProductSection = () => {
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
-                  <h3 className='text-border-white text-xl font-medium text-theme-700'>
+                  <h3 className='text-xl font-medium text-theme-700'>
                     Hoodies
                   </h3>
 
-                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
+                  <a
+                    href='https://www.etsy.com/listing/1675994996/be-happy-in-your-own-shell-seaside?click_key=1ab88ab48dd749433e34d2b94040d0af21e0727f%3A1675994996&click_sum=8757d152&ref=shop_home_active_18'
+                    target='_blank'
+                    className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'
+                  >
                     Shop Now
-                  </span>
+                  </a>
                 </div>
               </a>
-              {/* <a href='#' className='group relative block'>
-                <div className='relative h-[350px] sm:h-[450px]'>
-                  <img
-                    src='https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80'
-                    alt=''
-                    className='absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0'
-                  />
-
-                  <img
-                    src='https://images.unsplash.com/photo-1593795899630-b6033c0fa58d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
-                    alt=''
-                    className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
-                  />
-                </div>
-
-                <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
-                  <h3 className='text-xl font-medium text-white'>
-                    Skinny Jeans Blue
-                  </h3>
-
-                  <p className='mt-1.5 text-pretty text-xs text-white'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos sequi dicta impedit aperiam ipsum!
-                  </p>
-
-                  <span className='mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
-                    Shop Now
-                  </span>
-                </div>
-              </a> */}
             </li>
           </ul>
         </div>
