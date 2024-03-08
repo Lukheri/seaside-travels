@@ -112,7 +112,11 @@ const ProductSection = () => {
 
           <ul className='mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3'>
             <li>
-              <a href='#' className='group relative block'>
+              <a
+                href='https://www.etsy.com/listing/1690174819/be-happy-in-your-own-shell-seaside?click_key=a619a74275c7d5fd8eef756382f569156360f1f9%3A1690174819&click_sum=e1cde8f6&ref=shop_home_active_15'
+                target='_blank'
+                className='group relative block'
+              >
                 <img
                   src='/products/Tote bag/turtle.png'
                   alt=''
@@ -124,19 +128,19 @@ const ProductSection = () => {
                     Tote bags
                   </h3>
 
-                  <a
-                    href='https://www.etsy.com/listing/1690174819/be-happy-in-your-own-shell-seaside?click_key=a619a74275c7d5fd8eef756382f569156360f1f9%3A1690174819&click_sum=e1cde8f6&ref=shop_home_active_15'
-                    target='_blank'
-                    className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'
-                  >
+                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
-                  </a>
+                  </span>
                 </div>
               </a>
             </li>
 
             <li>
-              <a href='#' className='group relative block'>
+              <a
+                href='https://www.etsy.com/listing/1691589503/unisex-jersey-short-sleeve-tee-seaside?click_key=3a12aba236ae4fa6b1283c9e7c08f42f72d7526d%3A1691589503&click_sum=6f667042&ref=shop_home_active_1'
+                target='_blank'
+                className='group relative block'
+              >
                 <img
                   src='/products/Shirt/shirt turtle.png'
                   alt=''
@@ -146,19 +150,19 @@ const ProductSection = () => {
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
                   <h3 className='text-xl font-medium text-theme-700'>Shirts</h3>
 
-                  <a
-                    href='https://www.etsy.com/listing/1691589503/unisex-jersey-short-sleeve-tee-seaside?click_key=3a12aba236ae4fa6b1283c9e7c08f42f72d7526d%3A1691589503&click_sum=6f667042&ref=shop_home_active_1'
-                    target='_blank'
-                    className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'
-                  >
+                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
-                  </a>
+                  </span>
                 </div>
               </a>
             </li>
 
             <li className='lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1'>
-              <a href='#' className='group relative block'>
+              <a
+                href='https://www.etsy.com/listing/1675994996/be-happy-in-your-own-shell-seaside?click_key=1ab88ab48dd749433e34d2b94040d0af21e0727f%3A1675994996&click_sum=8757d152&ref=shop_home_active_18'
+                target='_blank'
+                className='group relative block'
+              >
                 <img
                   src='/products/Hoodie/hoodie ver 3.png'
                   alt=''
@@ -170,13 +174,9 @@ const ProductSection = () => {
                     Hoodies
                   </h3>
 
-                  <a
-                    href='https://www.etsy.com/listing/1675994996/be-happy-in-your-own-shell-seaside?click_key=1ab88ab48dd749433e34d2b94040d0af21e0727f%3A1675994996&click_sum=8757d152&ref=shop_home_active_18'
-                    target='_blank'
-                    className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'
-                  >
+                  <span className='mt-1.5 inline-block bg-theme-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white'>
                     Shop Now
-                  </a>
+                  </span>
                 </div>
               </a>
             </li>
