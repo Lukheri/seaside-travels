@@ -10,7 +10,7 @@ const Donate = () => {
               Your donation is highly appreciated
             </h2>
 
-            <p className='mt-4 text-theme-400 sm:text-xl'>
+            <p className='mt-4 text-theme-700 sm:text-xl'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
               dolores laborum labore provident impedit esse recusandae facere
               libero harum sequi.
@@ -20,31 +20,31 @@ const Donate = () => {
           <div className='mt-8 sm:mt-12'>
             <dl className='grid grid-cols-1 gap-4 sm:grid-cols-3'>
               <div className='flex flex-col rounded-lg bg-theme-200/15 px-4 py-8 text-center'>
-                <dt className='order-last text-lg font-medium text-theme-400'>
+                <dt className='order-last text-lg font-medium text-theme-600'>
                   Total Donations
                 </dt>
 
-                <dd className='text-4xl font-extrabold text-primary md:text-5xl'>
+                <dd className='text-4xl font-extrabold text-theme-700 md:text-5xl'>
                   $4.8m
                 </dd>
               </div>
 
               <div className='flex flex-col rounded-lg bg-theme-200/15 px-4 py-8 text-center'>
-                <dt className='order-last text-lg font-medium text-theme-400'>
+                <dt className='order-last text-lg font-medium text-theme-600'>
                   Official Addons
                 </dt>
 
-                <dd className='text-4xl font-extrabold text-primary md:text-5xl'>
+                <dd className='text-4xl font-extrabold text-theme-700 md:text-5xl'>
                   24
                 </dd>
               </div>
 
               <div className='flex flex-col rounded-lg bg-theme-200/15 px-4 py-8 text-center'>
-                <dt className='order-last text-lg font-medium text-theme-400'>
+                <dt className='order-last text-lg font-medium text-theme-600'>
                   Total Addons
                 </dt>
 
-                <dd className='text-4xl font-extrabold text-primary md:text-5xl'>
+                <dd className='text-4xl font-extrabold text-theme-700 md:text-5xl'>
                   86
                 </dd>
               </div>
@@ -64,7 +64,7 @@ const Donate = () => {
               </p>
 
               <div className='mt-8'>
-                <a href='#' className='text-2xl font-bold text-primary'>
+                <a href='#' className='text-2xl font-bold text-theme-700'>
                   {' '}
                   0151 475 4450{' '}
                 </a>
@@ -82,7 +82,7 @@ const Donate = () => {
                     Name
                   </label>
                   <input
-                    className='w-full rounded-lg border-theme-400 p-3 text-sm'
+                    className='w-full rounded-lg border-theme-600 p-3 text-sm'
                     placeholder='Name'
                     type='text'
                     id='name'
@@ -95,7 +95,7 @@ const Donate = () => {
                       Email
                     </label>
                     <input
-                      className='w-full rounded-lg border-theme-400 p-3 text-sm'
+                      className='w-full rounded-lg border-theme-600 p-3 text-sm'
                       placeholder='Email address'
                       type='email'
                       id='email'
@@ -107,7 +107,7 @@ const Donate = () => {
                       Phone
                     </label>
                     <input
-                      className='w-full rounded-lg border-theme-400 p-3 text-sm'
+                      className='w-full rounded-lg border-theme-600 p-3 text-sm'
                       placeholder='Phone Number'
                       type='tel'
                       id='phone'
@@ -119,7 +119,7 @@ const Donate = () => {
                   <div>
                     <label
                       htmlFor='Option1'
-                      className='block w-full cursor-pointer rounded-lg border border-theme-400 p-3 text-gray-600 hover:border-primary has-[:checked]:border-primary has-[:checked]:bg-primary has-[:checked]:text-white'
+                      className='block w-full cursor-pointer rounded-lg border border-theme-400 p-3 text-gray-600 hover:border-theme-700 has-[:checked]:border-theme-700 has-[:checked]:bg-theme-700 has-[:checked]:text-white'
                       tabIndex={0}
                     >
                       <input
@@ -137,7 +137,7 @@ const Donate = () => {
                   <div>
                     <label
                       htmlFor='Option2'
-                      className='block w-full cursor-pointer rounded-lg border border-theme-400 p-3 text-gray-600 hover:border-primary has-[:checked]:border-primary has-[:checked]:bg-primary has-[:checked]:text-white'
+                      className='block w-full cursor-pointer rounded-lg border border-theme-400 p-3 text-gray-600 hover:border-theme-700 has-[:checked]:border-theme-700 has-[:checked]:bg-theme-700 has-[:checked]:text-white'
                       tabIndex={0}
                     >
                       <input
@@ -155,7 +155,7 @@ const Donate = () => {
                   <div>
                     <label
                       htmlFor='Option3'
-                      className='block w-full cursor-pointer rounded-lg border border-theme-400 p-3 text-gray-600 hover:border-primary has-[:checked]:border-primary has-[:checked]:bg-primary has-[:checked]:text-white'
+                      className='block w-full cursor-pointer rounded-lg border border-theme-400 p-3 text-gray-600 hover:border-theme-700 has-[:checked]:border-theme-700 has-[:checked]:bg-theme-700 has-[:checked]:text-white'
                       tabIndex={0}
                     >
                       <input
@@ -176,7 +176,7 @@ const Donate = () => {
                     Enter amount
                   </label>
                   <input
-                    className='w-full rounded-lg border-theme-400 p-3 text-sm'
+                    className='w-full rounded-lg border-theme-600 p-3 text-sm'
                     placeholder='Enter amount'
                     type='text'
                     id='amount'
@@ -189,7 +189,7 @@ const Donate = () => {
                   </label>
 
                   <textarea
-                    className='w-full rounded-lg border-theme-400 p-3 text-sm'
+                    className='w-full rounded-lg border-theme-600 p-3 text-sm'
                     placeholder='Message'
                     rows={8}
                     id='message'
@@ -199,7 +199,7 @@ const Donate = () => {
                 <div className='mt-4'>
                   <button
                     type='submit'
-                    className='inline-block w-full rounded-lg bg-primary px-5 py-3 font-medium text-white sm:w-auto'
+                    className='inline-block w-full rounded-lg bg-theme-700 px-5 py-3 font-medium text-white sm:w-auto'
                   >
                     Donate
                   </button>

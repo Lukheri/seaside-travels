@@ -115,7 +115,7 @@ const ProductSection = () => {
                 <img
                   src='/products/Tote bag/turtle.png'
                   alt=''
-                  className='aspect-square w-full object-cover transition duration-500 group-hover:opacity-90'
+                  className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
@@ -135,7 +135,7 @@ const ProductSection = () => {
                 <img
                   src='/products/Shirt/shirt turtle.png'
                   alt=''
-                  className='aspect-square w-full object-cover transition duration-500 group-hover:opacity-90'
+                  className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
@@ -153,11 +153,11 @@ const ProductSection = () => {
                 <img
                   src='/products/Hoodie/hoodie ver 3.png'
                   alt=''
-                  className='aspect-square w-full object-cover transition duration-500 group-hover:opacity-90'
+                  className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
                 />
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
-                  <h3 className='text-xl font-medium text-theme-700'>
+                  <h3 className='text-border-white text-xl font-medium text-theme-700'>
                     Hoodies
                   </h3>
 

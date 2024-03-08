@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+.text-border-white {
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
+}
+
 .hero-banner-wave {
   position: absolute;
   bottom: 0;

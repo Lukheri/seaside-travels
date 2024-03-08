@@ -18,7 +18,7 @@ const HeroBanner = () => {
           className='flex h-full items-center justify-center'
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+              'url("https://images.unsplash.com/photo-1610813328474-8ea0c1abf782?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -48,7 +48,7 @@ const HeroBanner = () => {
             </svg>
           </div>
           <div className='absolute top-[150px] text-black'>
-            <p className='text-4xl text-theme-700 sm:text-6xl md:text-7xl xl:text-9xl'>
+            <p className='text-border-white text-4xl text-theme-700 sm:text-6xl md:text-7xl xl:text-9xl'>
               <span className={`${myFont.className}`}>Seaside</span>{' '}
               <span className={`${myFont.className} -mt-9 block text-right`}>
                 travels
@@ -56,7 +56,7 @@ const HeroBanner = () => {
             </p>
           </div>
           <a
-            className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-current bg-theme-100 px-10 py-5 text-black focus:outline-none focus:ring active:text-myrtle'
+            className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-theme-400 bg-theme-accent px-10 py-5 text-black focus:outline-none focus:ring active:text-myrtle'
             href='#'
           >
             <span className='absolute -end-full transition-all group-hover:end-4'>
