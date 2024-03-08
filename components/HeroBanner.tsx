@@ -24,6 +24,9 @@ const HeroBanner = () => {
             backgroundPosition: 'center',
           }}
         >
+          <div
+            className='absolute left-0 top-0 h-full w-full bg-white opacity-30' // Added overlay element with white background and opacity
+          ></div>
           <div className='hero-banner-wave'>
             <svg
               data-name='Layer 1'
@@ -53,6 +56,9 @@ const HeroBanner = () => {
               <span className={`${myFont.className} -mt-9 block text-right`}>
                 travels
               </span>
+            </p>
+            <p className={`text-center font-sans text-xl text-theme-700`}>
+              Diverse Abilities, Shared Horizons
             </p>
           </div>
           <a
