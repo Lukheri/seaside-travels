@@ -6,6 +6,7 @@ import Donate from '@/components/Donate'
 import PodcastSection from '@/components/PodcastSection'
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
+import Team from '@/components/Team'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <PodcastSection />
       <Testimonials />
       <Volunteer />
+      <Team />
       <Donate />
       <Contact />
     </main>
