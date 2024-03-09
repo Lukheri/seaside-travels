@@ -16,16 +16,26 @@ const About = () => {
           </div>
 
           <div className='relative flex items-center bg-theme-primary/25'>
+            <div
+              className='absolute  bottom-0 left-0 right-0 top-0'
+              style={{
+                backgroundImage: `url(/logo.png)`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                opacity: '0.25',
+              }}
+            ></div>
             <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
-            <div className='p-8 sm:p-16 lg:p-24'>
+            <div className='z-10 p-8 sm:p-16 lg:p-24'>
               <h2 className='text-2xl font-bold sm:text-3xl'>
                 Started with Ariel, therapist, and her team seeing gaps in the
                 resources and care locally for our children and families with
                 unique abilities.
               </h2>
 
-              <p className='mt-4 text-gray-600'>
+              <p className='mt-4 text-black'>
                 Ariel and her family love to travel the world and is always
                 pondering on her trips about how these adventures could be
                 accessible for children and their families. the idea is that

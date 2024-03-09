@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Announcements from './Announcements'
-import Logo from '@/assets/logo.png'
+import Logo from '@/public/logo.png'
 import Image from 'next/image'
 
 const Navbar = () => {

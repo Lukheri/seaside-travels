@@ -1,11 +1,19 @@
 import React from 'react'
+import Logo from '@/public/logo.png'
 
 const Contact = () => {
   return (
     <section className=''>
       <div className='container mx-auto px-6 py-12'>
         <div className='lg:-mx-6 lg:flex lg:items-center'>
-          <div className='lg:mx-6 lg:w-1/2'>
+          <div
+            className='lg:mx-6 lg:w-1/2'
+            // style={{
+            //   backgroundImage: `url(/logo.png)`,
+            //   backgroundSize: 'cover',
+            //   backgroundRepeat: 'no-repeat',
+            // }}
+          >
             <h1 className='text-2xl font-semibold capitalize text-gray-800 lg:text-3xl'>
               Contact us for <br /> more info
             </h1>
