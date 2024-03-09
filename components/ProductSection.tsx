@@ -34,7 +34,11 @@ const ProductSection = () => {
             <div className='lg:col-span-2 lg:py-8'>
               <ul className='grid grid-cols-2 gap-4'>
                 <li>
-                  <a href='#' className='group block'>
+                  <a
+                    href='https://www.etsy.com/listing/1690163467/be-happy-in-your-own-shell-seaside?click_key=e1efad53eb32cfde29fcc9ac8c4355e6abdb0da6%3A1690163467&click_sum=f867332e&ref=shop_home_active_19'
+                    target='_blank'
+                    className='group block'
+                  >
                     <div className='relative h-[350px] sm:h-[450px]'>
                       <Image
                         src='/products/Mug/mug alt.jpg'
@@ -62,7 +66,11 @@ const ProductSection = () => {
                 </li>
 
                 <li>
-                  <a href='#' className='group block overflow-hidden'>
+                  <a
+                    href='https://www.etsy.com/listing/1677437744/unisex-crewneck-sweatshirt-seaside?click_key=58758c06e2f987045fd80991d7c1ee0cffe8d1f6%3A1677437744&click_sum=08aea23f&ref=shop_home_active_2'
+                    target='_blank'
+                    className='group block overflow-hidden'
+                  >
                     <div className='relative h-[350px] sm:h-[450px]'>
                       <Image
                         src='/products/Long sleeves/long sleeves alt.avif'
