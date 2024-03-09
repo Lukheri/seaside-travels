@@ -1,4 +1,6 @@
 import React from 'react'
+import Logo from '@/assets/logo.png'
+import Image from 'next/image'
 
 const Volunteer = () => {
   return (
@@ -46,8 +48,9 @@ const Volunteer = () => {
         </div>
       </section>
       <section className='relative flex flex-wrap lg:h-screen lg:items-center'>
-        <div className='w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24'>
+        <div className='w-full px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:w-1/2 lg:px-8 lg:pb-24 lg:pt-16'>
           <div className='mx-auto max-w-lg text-center'>
+            <Image src={Logo} alt='logo' className='mx-auto h-1/2 w-1/2' />
             <h1 className='text-2xl font-bold sm:text-3xl'>
               Get started today!
             </h1>
@@ -90,7 +93,7 @@ const Volunteer = () => {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <label htmlFor='password' className='sr-only'>
                 Password
               </label>
@@ -125,21 +128,22 @@ const Volunteer = () => {
                   </svg>
                 </span>
               </div>
-            </div>
+            </div> */}
 
             <div className='flex items-center justify-between'>
-              <p className='text-sm text-gray-500'>
+              {/* <p className='text-sm text-gray-500'>
                 No account?
                 <a className='underline' href='#'>
                   Sign up
                 </a>
-              </p>
+              </p> */}
+              <div></div>
 
               <button
                 type='submit'
                 className='inline-block rounded-lg bg-theme-600 px-5 py-3 text-sm font-medium text-white'
               >
-                Sign in
+                Register now
               </button>
             </div>
           </form>
