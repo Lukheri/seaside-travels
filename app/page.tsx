@@ -7,6 +7,7 @@ import PodcastSection from '@/components/PodcastSection'
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Team from '@/components/Team'
+import MissionVision from '@/components/MissionVision'
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       <About />
       <ProductSection />
       <PodcastSection />
-      <Testimonials />
       <Volunteer />
+      <Testimonials />
+      <MissionVision />
       <Team />
       <Donate />
       <Contact />

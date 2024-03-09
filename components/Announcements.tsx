@@ -58,7 +58,7 @@ const Announcements = () => {
             <div className='swiper-slide'>
               <p className='text-center text-sm font-medium text-gray-900'>
                 Love our merch?{' '}
-                <a href='#' className='block underline sm:inline-block'>
+                <a href='#merch' className='block underline sm:inline-block'>
                   Check out whats new!
                 </a>
               </p>
@@ -67,7 +67,7 @@ const Announcements = () => {
             <div className='swiper-slide'>
               <p className='text-center text-sm font-medium text-gray-900'>
                 Get ready for new events.{' '}
-                <a href='#' className='block underline sm:inline-block'>
+                <a href='#events' className='block underline sm:inline-block'>
                   Learn more!
                 </a>
               </p>
@@ -76,7 +76,7 @@ const Announcements = () => {
             <div className='swiper-slide'>
               <p className='text-center text-sm font-medium text-gray-900'>
                 Listen to our podcast!{' '}
-                <a href='#' className='block underline sm:inline-block'>
+                <a href='#podcast' className='block underline sm:inline-block'>
                   Listen here!
                 </a>
               </p>
