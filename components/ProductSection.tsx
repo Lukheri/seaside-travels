@@ -37,14 +37,14 @@ const ProductSection = () => {
                   <a href='#' className='group block'>
                     <div className='relative h-[350px] sm:h-[450px]'>
                       <Image
-                        src='/products/Mug/turtle 1.png'
+                        src='/products/Mug/mug alt.jpg'
                         alt=''
                         fill
                         className='absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0'
                       />
 
                       <Image
-                        src='/products/Mug/turtle.png'
+                        src='/products/Mug/turtle 1.png'
                         alt=''
                         fill
                         className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
@@ -56,7 +56,7 @@ const ProductSection = () => {
                         Mug
                       </h3>
 
-                      <p className='mt-1 text-sm text-gray-700'>$150</p>
+                      <p className='mt-1 text-sm text-gray-700'>PHP 426.16</p>
                     </div>
                   </a>
                 </li>
@@ -65,28 +65,26 @@ const ProductSection = () => {
                   <a href='#' className='group block overflow-hidden'>
                     <div className='relative h-[350px] sm:h-[450px]'>
                       <Image
-                        src='/products/Long sleeves/turtle 1.png'
+                        src='/products/Long sleeves/long sleeves alt.avif'
                         alt=''
                         fill
                         className='absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0'
                       />
 
                       <Image
-                        src='/products/Long sleeves/waves of change ver 2.png'
+                        src='/products/Long sleeves/turtle 1.png'
                         alt=''
                         fill
                         className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
                       />
                     </div>
 
-                    <div className='relative pt-3'>
-                      <h3 className='text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4'>
+                    <div className='mt-3'>
+                      <h3 className='font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4'>
                         Long Sleeves
                       </h3>
 
-                      <p className='mt-1.5 tracking-wide text-gray-900'>
-                        $189.99
-                      </p>
+                      <p className='mt-1 text-sm text-gray-700'>PHP 1,627.91</p>
                     </div>
                   </a>
                 </li>
