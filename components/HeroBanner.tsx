@@ -24,8 +24,10 @@ const HeroBanner = () => {
             backgroundPosition: 'center',
           }}
         >
-          {/* Overlay with white background */}
+          {/* -- Overlay with white background */}
           <div className='absolute left-0 top-0 h-full w-full bg-white opacity-30'></div>
+          {/* -- Overlay with white background */}
+
           <div className='hero-banner-wave'>
             <svg
               data-name='Layer 1'
@@ -89,7 +91,7 @@ const HeroBanner = () => {
           </a>
         </div>
       </div>
-      <div className='spacer layer1 relative flex items-center justify-center'>
+      <div className='hero-wave-spacer hero-wave-layer1 relative flex items-center justify-center'>
         <div className='absolute bottom-0 text-3xl tracking-wider'>
           About Us
         </div>
