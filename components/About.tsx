@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutPhoto from '@/public/about_photo.jpg'
 
 const About = () => {
   return (
@@ -6,10 +7,10 @@ const About = () => {
       <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
         <div className='grid grid-cols-1 lg:h-screen lg:grid-cols-2'>
           <div className='relative z-10 lg:py-16'>
-            <div className='relative h-64 sm:h-80 lg:h-full'>
+            <div className='h- relative h-64 sm:h-96 lg:h-full'>
               <img
                 alt=''
-                src='https://images.unsplash.com/photo-1615175225908-141ce7144435?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                src={'/about_photo.jpg'}
                 className='absolute inset-0 h-full w-full object-cover'
               />
             </div>

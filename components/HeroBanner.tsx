@@ -24,9 +24,8 @@ const HeroBanner = () => {
             backgroundPosition: 'center',
           }}
         >
-          <div
-            className='absolute left-0 top-0 h-full w-full bg-white opacity-30' // Added overlay element with white background and opacity
-          ></div>
+          {/* Overlay with white background */}
+          <div className='absolute left-0 top-0 h-full w-full bg-white opacity-30'></div>
           <div className='hero-banner-wave'>
             <svg
               data-name='Layer 1'
@@ -50,15 +49,11 @@ const HeroBanner = () => {
               ></path>
             </svg>
           </div>
-          <div className='absolute top-[160px] text-black xl:top-[150px]'>
-            <p className='text-border-white text-center text-6xl text-theme-700 md:text-7xl xl:text-9xl'>
-              <span className={`${myFont.className}`}>Seaside</span>{' '}
-              <span
-                className={`${myFont.className} -mt-4 block md:-mt-6 lg:-mt-9 xl:text-right`}
-              >
-                travels
-              </span>
-            </p>
+          <div className='absolute top-[160px] text-black sm:top-[180px]'>
+            <img
+              src='/logo_text.png'
+              className='mx-auto h-auto w-[320px] sm:w-[360px] md:w-[400px] lg:w-[480px]'
+            />
             <p
               className={`mt-4 text-center font-sans text-lg italic text-theme-700 md:text-2xl`}
             >
@@ -66,7 +61,7 @@ const HeroBanner = () => {
             </p>
           </div>
           <a
-            className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-theme-400 bg-theme-accent px-10 py-5 text-black focus:outline-none focus:ring active:text-myrtle'
+            className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-theme-500 bg-theme-700 px-10 py-5 text-theme-accent'
             href='https://www.etsy.com/shop/seasidetherapy/?etsrc=sdt'
             target='_blank'
           >

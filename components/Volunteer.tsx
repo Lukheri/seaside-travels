@@ -21,8 +21,8 @@ const Volunteer = () => {
                 className='h-40 w-full object-cover sm:h-56 md:h-full'
               />
             </div>
-            <div className='bg-theme-600 p-8 md:p-12 lg:px-16 lg:py-24'>
-              <div className='mx-auto max-w-xl text-center'>
+            <div className='relative bg-theme-600 p-8 md:p-12 lg:px-16 lg:py-24'>
+              <div className='sticky top-4 mx-auto max-w-xl text-center'>
                 <h2 className='text-2xl font-bold text-white md:text-3xl'>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit
                 </h2>

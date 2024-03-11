@@ -3,7 +3,7 @@ import Logo from '@/public/logo.png'
 
 const Contact = () => {
   return (
-    <section className=''>
+    <section className='' id='contact-us'>
       <div className='container mx-auto px-6 py-12'>
         <div className='lg:-mx-6 lg:flex lg:items-center'>
           <div

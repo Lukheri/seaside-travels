@@ -14,11 +14,11 @@ export default function Home() {
     <main className=''>
       <HeroBanner />
       <About />
+      <MissionVision />
       <ProductSection />
       <PodcastSection />
       <Volunteer />
       <Testimonials />
-      <MissionVision />
       <Team />
       <Donate />
       <Contact />

@@ -43,7 +43,7 @@ const Navbar = () => {
       className={`glass-navbar fixed top-0 z-50 flex w-full flex-col bg-primary ${isScrollingDown ? '-translate-y-[160px]' : isAtTop ? 'translate-y-0' : '-translate-y-[50px]'}`}
       style={{ transition: 'transform 0.3s ease' }}
     >
-      <Announcements isAtTop={isAtTop} />
+      <Announcements />
       <div className='relative flex h-[90px] items-center justify-between px-4 sm:h-[110px]'>
         <div className={`drawer block sm:hidden`}>
           <input id='my-drawer' type='checkbox' className='drawer-toggle' />
@@ -103,7 +103,7 @@ const Navbar = () => {
           height={90}
           className='hidden cursor-pointer sm:flex'
         />
-        <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6'>
+        <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6 lg:gap-10'>
           <a
             href='#merch'
             className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
@@ -130,6 +130,12 @@ const Navbar = () => {
             className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
           >
             <span className='mx-1 text-sm sm:text-base'>Donate</span>
+          </a>
+          <a
+            href='#contact-us'
+            className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+          >
+            <span className='mx-1 text-sm sm:text-base'>Contact Us</span>
           </a>
         </div>
       </div>

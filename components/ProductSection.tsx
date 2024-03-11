@@ -12,7 +12,7 @@ const ProductSection = () => {
               <div className='mx-auto max-w-md text-center lg:text-left'>
                 <header>
                   <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>
-                    Featured
+                    Merch
                   </h2>
 
                   <p className='mt-4 text-gray-500'>
