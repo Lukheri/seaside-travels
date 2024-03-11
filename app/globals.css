@@ -12,6 +12,13 @@ html{
   scroll-behavior: smooth;
 }
 
+.glass-navbar {
+  background: rgba(247, 241, 209, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
 .text-border-white {
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: white;

@@ -9,7 +9,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-const Announcements = () => {
+const Announcements = ({ isAtTop }: { isAtTop: boolean }) => {
   useEffect(() => {
     const swiper = new Swiper('.swiper', {
       modules: [Autoplay, Navigation, Pagination],
@@ -33,7 +33,10 @@ const Announcements = () => {
   }, [])
 
   return (
-    <div className='flex h-[50px] items-center bg-primary px-4 py-2'>
+    <div
+      className={`flex h-[50px] items-center bg-primary px-4 py-2 ${isAtTop ? 'translate-y-[0]' : '-translate-y-[50px]'}`}
+      style={{ transition: 'transform 0.3s ease' }}
+    >
       <div className='mx-auto flex w-full max-w-3xl items-center justify-center'>
         <button
           className='swiper-prev-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition'

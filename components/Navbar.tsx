@@ -1,3 +1,4 @@
+'use client'
 import React, { useCallback, useEffect, useState } from 'react'
 import Announcements from './Announcements'
 import Logo from '@/public/logo.png'
@@ -5,18 +6,55 @@ import Image from 'next/image'
 import { Menu } from 'lucide-react'
 
 const Navbar = () => {
+  const [isAtTop, setIsAtTop] = useState(true)
+  const [isScrollingDown, setIsScrollingDown] = useState(false)
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout | undefined
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop
+      setIsScrollingDown(scrollTop > lastScrollTop)
+      setIsAtTop(scrollTop === 0)
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
+      console.log(scrollTop)
+      // with debounce
+      // clearTimeout(timeout)
+      // timeout = setTimeout(() => {
+      //   const scrollTop = window.scrollY || document.documentElement.scrollTop
+      //   setIsScrollingDown(scrollTop > lastScrollTop)
+      //   setIsAtTop(scrollTop === 0)
+      //   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
+      //   console.log(scrollTop)
+      // }, 200)
+    }
+
+    let lastScrollTop = 0
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      clearTimeout(timeout)
+    }
+  }, [])
+
   return (
-    <div className='fixed top-0 z-50 flex w-full flex-col bg-primary'>
-      <Announcements />
-      <div className='glass relative flex h-[90px] items-center justify-between bg-accent px-4 sm:h-[110px]'>
-        <div className='drawer block sm:hidden'>
+    <div
+      className={`glass-navbar fixed top-0 z-50 flex w-full flex-col bg-primary ${isScrollingDown ? '-translate-y-[160px]' : isAtTop ? 'translate-y-0' : '-translate-y-[50px]'}`}
+      style={{ transition: 'transform 0.3s ease' }}
+    >
+      <Announcements isAtTop={isAtTop} />
+      <div className='relative flex h-[90px] items-center justify-between px-4 sm:h-[110px]'>
+        <div className={`drawer block sm:hidden`}>
           <input id='my-drawer' type='checkbox' className='drawer-toggle' />
           <div className='drawer-content'>
             <label htmlFor='my-drawer' className='btn drawer-button'>
               <Menu />
             </label>
           </div>
-          <div className='drawer-side'>
+          <div
+            className={`drawer-side ${isAtTop ? 'translate-y-0' : 'translate-y-[50px]'}`}
+          >
             <label
               htmlFor='my-drawer'
               aria-label='close sidebar'
@@ -66,9 +104,6 @@ const Navbar = () => {
           className='hidden cursor-pointer sm:flex'
         />
         <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6'>
-          {/* <button className='-px-1 -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-theme-500 bg-transparent px-2 py-2 text-center text-theme-600 focus:outline-none sm:px-4 '>
-              <span className='mx-1 text-sm sm:text-base'>Merch</span>
-            </button> */}
           <a
             href='#merch'
             className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
