@@ -1,7 +1,7 @@
 'use client'
 import React, { useCallback, useEffect, useState } from 'react'
 import Announcements from './Announcements'
-import Logo from '@/public/icons/logo.png'
+import Logo from '@/public/icons/logo_no_text.png'
 import Image from 'next/image'
 import { Menu } from 'lucide-react'
 
@@ -95,13 +95,16 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <Image
-          src={Logo}
-          alt='logo'
-          width={90}
-          height={90}
-          className='hidden cursor-pointer sm:flex'
-        />
+        <a href='#'>
+          <Image
+            src={Logo}
+            alt='logo'
+            width={70}
+            height={70}
+            className='hidden cursor-pointer transition-transform ease-in hover:scale-110 sm:flex'
+          />
+        </a>
+
         <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6 lg:gap-10'>
           <a
             href='#merch'
