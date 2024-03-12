@@ -1,7 +1,7 @@
 'use client'
 import React, { useCallback, useEffect, useState } from 'react'
 import Announcements from './Announcements'
-import Logo from '@/public/logo.png'
+import Logo from '@/public/icons/logo.png'
 import Image from 'next/image'
 import { Menu } from 'lucide-react'
 

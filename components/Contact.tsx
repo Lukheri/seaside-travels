@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '@/public/logo.png'
+import Logo from '@/public/icons/logo.png'
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
           <div
             className='lg:mx-6 lg:w-1/2'
             // style={{
-            //   backgroundImage: `url(/logo.png)`,
+            //   backgroundImage: `url(/icons/logo.png)`,
             //   backgroundSize: 'cover',
             //   backgroundRepeat: 'no-repeat',
             // }}

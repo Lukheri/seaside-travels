@@ -1,5 +1,4 @@
 import React from 'react'
-import AboutPhoto from '@/public/about_photo.jpg'
 
 const About = () => {
   return (
@@ -10,7 +9,7 @@ const About = () => {
             <div className='h- relative h-64 sm:h-96 lg:h-full'>
               <img
                 alt=''
-                src={'/about_photo.jpg'}
+                src={'/users/ariel.jpg'}
                 className='absolute inset-0 h-full w-full object-cover'
               />
             </div>
@@ -20,7 +19,7 @@ const About = () => {
             <div
               className='absolute  bottom-0 left-0 right-0 top-0'
               style={{
-                backgroundImage: `url(/logo.png)`,
+                backgroundImage: `url(/icons/logo_no_text.png)`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',

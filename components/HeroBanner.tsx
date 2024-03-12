@@ -53,7 +53,7 @@ const HeroBanner = () => {
           </div>
           <div className='absolute top-[160px] text-black sm:top-[180px]'>
             <img
-              src='/logo_text.png'
+              src='/icons/logo_text.png'
               className='mx-auto h-auto w-[320px] sm:w-[360px] md:w-[400px] lg:w-[480px]'
             />
             <p
