@@ -2,10 +2,10 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id='about' >
-      <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 animate'>
-        <div className='grid grid-cols-1 lg:h-screen lg:grid-cols-2'>
-          <div className='relative z-10 lg:py-16'>
+    <section id='about'>
+      <div className='animate mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
+        <div className='group grid grid-cols-1 lg:grid-cols-2'>
+          <div className='relative z-10 transition-transform ease-in-out lg:translate-x-1/2 lg:py-16 lg:group-hover:translate-x-0'>
             <div className='h- relative h-64 sm:h-96 lg:h-full'>
               <img
                 alt=''
@@ -15,7 +15,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='relative flex items-center bg-theme-primary/25'>
+          <div className='relative flex items-center bg-theme-primary/25 transition-transform ease-in-out lg:-translate-x-1/2 lg:group-hover:translate-x-0'>
             <div
               className='absolute  bottom-0 left-0 right-0 top-0'
               style={{

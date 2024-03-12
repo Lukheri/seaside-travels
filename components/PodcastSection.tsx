@@ -22,11 +22,11 @@ const PodcastSection = () => {
           <div className='flex flex-col md:flex-row md:gap-8'>
             <div className='mt-4 md:mt-8'>
               <a
-                className='group relative inline-block text-sm font-medium text-theme-500 focus:outline-none focus:ring active:text-theme-500'
+                className='group relative inline-block text-sm font-medium text-theme-500 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 focus:outline-none focus:ring active:text-theme-500'
                 href='https://www.youtube.com/@WavesofWisdomFL'
                 target='_blank'
               >
-                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
+                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-1 group-hover:translate-y-1'></span>
 
                 <span className='relative flex items-center justify-center gap-4 border border-current bg-white px-8 py-3'>
                   {' '}
@@ -70,11 +70,11 @@ const PodcastSection = () => {
             </div>
             <div className='mt-4 md:mt-8'>
               <a
-                className='group relative inline-block text-sm font-medium text-theme-500 focus:outline-none focus:ring active:text-theme-500'
+                className='group relative inline-block text-sm font-medium text-theme-500 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 focus:outline-none focus:ring active:text-theme-500'
                 href='https://podcasters.spotify.com/pod/show/waves-of-wisdom'
                 target='_blank'
               >
-                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
+                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-1 group-hover:translate-y-1'></span>
 
                 <span className='relative flex items-center justify-center gap-4 border border-current bg-white px-8 py-3'>
                   {' '}
