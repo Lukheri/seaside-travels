@@ -19,8 +19,8 @@ export default function Home() {
       <PodcastSection />
       <Volunteer />
       <Testimonials />
-      <Team />
       <Donate />
+      <Team />
       <Contact />
     </main>
   )

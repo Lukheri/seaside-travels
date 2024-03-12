@@ -119,7 +119,7 @@ const PodcastSection = () => {
               <img
                 src='/podcast thumbnails/ep1_thumbnail.jpg'
                 alt='thumbnail'
-                className='h-auto w-full cursor-pointer rounded-lg sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px]'
+                className='h-auto w-full cursor-pointer rounded-lg sm:h-[300px] sm:w-[300px] md:h-[350px] md:w-[350px]'
               />
               {/* </div> */}
 
@@ -190,7 +190,7 @@ const PodcastSection = () => {
               <img
                 src='/podcast thumbnails/ep1_thumbnail.jpg'
                 alt='thumbnail'
-                className='h-auto w-full rounded-lg sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px]'
+                className='h-auto w-full rounded-lg sm:h-[300px] sm:w-[300px] md:h-[350px] md:w-[350px]'
               />
               {/* </div> */}
 
@@ -261,7 +261,7 @@ const PodcastSection = () => {
               <img
                 src='/podcast thumbnails/ep1_thumbnail.jpg'
                 alt='thumbnail'
-                className='h-auto w-full rounded-lg sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px]'
+                className='h-auto w-full rounded-lg sm:h-[300px] sm:w-[300px] md:h-[350px] md:w-[350px]'
               />
               {/* </div> */}
 

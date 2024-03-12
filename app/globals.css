@@ -112,6 +112,7 @@ html{
   white-space: nowrap;
   position: relative;
   display: flex;
+  margin: 0;
 }
 
 .logos:before,
@@ -140,7 +141,7 @@ html{
 
 .logos-slide {
   display: flex;
-  animation: 30s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 .logos-slide p {

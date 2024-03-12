@@ -40,8 +40,8 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className='mx-2 w-72 truncate text-gray-700 '>
-                  Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+                <span className='mx-2 w-72 text-gray-700 '>
+                  5625 Strand Blvd Suite 512 Naples FL, 34110
                 </span>
               </p>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                 </svg>
 
                 <span className='mx-2 w-72 truncate text-gray-700 '>
-                  (257) 563-7401
+                  (239) 392-1070
                 </span>
               </p>
 
@@ -83,12 +83,12 @@ const Contact = () => {
                 </svg>
 
                 <span className='mx-2 w-72 truncate text-gray-700 '>
-                  acb@example.com
+                  office@seasidetherapyFL.com
                 </span>
               </p>
             </div>
 
-            <div className='mt-6 w-80 md:mt-8'>
+            {/* <div className='mt-6 w-80 md:mt-8'>
               <h3 className='text-gray-600  '>Follow us</h3>
 
               <div className='-mx-1.5 mt-4 flex '>
@@ -165,7 +165,7 @@ const Contact = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className='mt-8 lg:mx-6 lg:w-1/2'>

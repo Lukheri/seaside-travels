@@ -17,7 +17,6 @@ const Navbar = () => {
       setIsScrollingDown(scrollTop > lastScrollTop)
       setIsAtTop(scrollTop === 0)
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
-      console.log(scrollTop)
       // with debounce
       // clearTimeout(timeout)
       // timeout = setTimeout(() => {
