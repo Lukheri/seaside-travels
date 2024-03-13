@@ -4,9 +4,10 @@ const Marquee = () => {
   return (
     <>
       <div className='logos'>
-        <div className='logos-slide relative'>
-          {/* <div className='marquee-spacer marquee-layer1 absolute -top-[60px]'></div>
-          <div className='marquee-spacer marquee-layer2 absolute -bottom-[60px]'></div> */}
+        <div className='hero-wave wave1 z-10'></div>
+        <div className='hero-wave wave2'></div>
+        <div className='hero-wave wave3'></div>
+        <div className='logos-slide relative z-20'>
           <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
             NEW ARRIVALS!
           </p>
@@ -32,9 +33,7 @@ const Marquee = () => {
             NEW ARRIVALS!
           </p>
         </div>
-        <div className='logos-slide relative'>
-          {/* <div className='marquee-spacer marquee-layer1 absolute -top-[60px]'></div>
-          <div className='marquee-spacer marquee-layer2 absolute -bottom-[60px]'></div> */}
+        <div className='logos-slide relative z-20'>
           <p className='text-2xl font-semibold tracking-wider sm:text-3xl md:text-4xl lg:text-5xl'>
             NEW ARRIVALS!
           </p>

@@ -58,24 +58,6 @@ html{
   background-image: url("../assets/layered-waves-haikei.svg");
 }
 
-.marquee-spacer {
-  aspect-ratio: 960/20;
-  width: 100%;
-  /* height: 30%; */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* z-index: -1; */
-}
-
-.marquee-layer1 {
-  background-image: url("../assets/marquee_waves_top.svg");
-}
-
-.marquee-layer2 {
-  background-image: url("../assets/marquee_waves_bot.svg");
-}
-
 
 @keyframes slide {
   from {
