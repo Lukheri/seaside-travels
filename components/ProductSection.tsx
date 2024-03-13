@@ -8,14 +8,17 @@ const ProductSection = () => {
       <section id='merch'>
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
           <div className='grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch'>
-            <div className='grid place-content-center rounded bg-theme-200 p-6 sm:p-8'>
-              <div className='mx-auto max-w-md text-center lg:text-left'>
+            <div className='playing relative grid place-content-center overflow-hidden rounded bg-theme-200 p-6 sm:p-8'>
+              <div className='wave'></div>
+              <div className='wave'></div>
+              <div className='wave'></div>
+              <div className='z-10 mx-auto max-w-md text-center lg:text-left'>
                 <header>
                   <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>
                     Merch
                   </h2>
 
-                  <p className='mt-4 text-gray-500'>
+                  <p className='mt-4 text-gray-900'>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quas rerum quam amet provident nulla error!
                   </p>
