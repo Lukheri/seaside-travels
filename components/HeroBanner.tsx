@@ -13,7 +13,13 @@ const myFont = localFont({
 const HeroBanner = () => {
   return (
     <>
-      <div className='h-screen'>
+      <div className='relative h-screen overflow-hidden'>
+        {/* <div className='ocean'> */}
+        <div className='hero-wave wave1 z-10'></div>
+        <div className='hero-wave wave2'></div>
+        <div className='hero-wave wave3'></div>
+        {/* </div> */}
+
         <div
           className='flex h-full items-center justify-center'
           style={{
@@ -28,7 +34,7 @@ const HeroBanner = () => {
           <div className='absolute left-0 top-0 h-full w-full bg-white opacity-30'></div>
           {/* -- Overlay with white background */}
 
-          <div className='hero-banner-wave'>
+          {/* <div className='hero-banner-wave'>
             <svg
               data-name='Layer 1'
               xmlns='http://www.w3.org/2000/svg'
@@ -50,7 +56,7 @@ const HeroBanner = () => {
                 className='fill-theme-primary'
               ></path>
             </svg>
-          </div>
+          </div> */}
           <div className='absolute top-[160px] text-black sm:top-[180px]'>
             <img
               src='/icons/logo_text.png'

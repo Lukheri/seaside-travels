@@ -224,18 +224,35 @@ html{
 
 .wave {
   position: absolute;
-  width: 720px;
-  height: 950px;
+  width: 1000px;
+  height: 1200px;
   opacity: 0.6;
 
-  left: -15%;
+  left: -50%;
   background: linear-gradient(744deg,#0B3D5E,#5788A9 60%,#75c2bb);
 }
 
-.wave:nth-child(1),
+.wave:nth-child(1){
+  left: -50%;
+  top: -50%;
+  
+}
+
 .wave:nth-child(2),
 .wave:nth-child(3) {
   top: 130px;
+}
+
+@media screen and (max-width: 640px) {
+  .wave:nth-child(1){
+    left: -50%;
+    top: -70%;
+  }
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 90px;
+  }
+
 }
 
 
@@ -275,3 +292,57 @@ html{
   }
 }
 
+.hero-wave {
+  position: absolute;
+
+  left: 0;
+
+  transform: translate(0, 0, 0);
+  /* animation: hero-wave 7s ease infinite; */
+}
+
+.wave1{
+  background: url("../assets/wave.svg") repeat-x;
+  animation: hero-wave 6s ease infinite;
+  width: 6400px;
+  bottom: -80px;
+  height: 198px;
+}
+
+.wave2{
+  background: url("../assets/wave2.svg") repeat-x;
+  width: 6400px;
+  bottom: -50px;
+  height: 198px;
+}
+
+.wave3{
+  background: url("../assets/wave3.svg") repeat-x;
+  animation: hero-wave 7s ease infinite;
+  width: 5000px;
+  bottom: -50px;
+  height: 198px;
+  transform: scaleX(-1);
+}
+
+.hero-wave:nth-of-type(2) {
+  bottom: -80px;
+  animation: swell 4s ease infinite;
+  opacity: 1;
+}
+
+@keyframes hero-wave {
+  0% { margin-left: 0; }
+  100% { margin-left: -1600px;}
+}
+
+
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate(0, -30px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+}
