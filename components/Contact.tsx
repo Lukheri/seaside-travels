@@ -169,7 +169,7 @@ const Contact = () => {
           </div>
 
           <div className='mt-8 lg:mx-6 lg:w-1/2'>
-            <div className='mx-auto w-full overflow-hidden rounded-lg bg-white px-8 py-10 shadow-2xl shadow-gray-300/50 lg:max-w-xl '>
+            <div className='mx-auto w-full overflow-hidden rounded-lg bg-white px-4 py-6 shadow-2xl shadow-gray-300/50 lg:max-w-xl lg:px-8 lg:py-10 '>
               <h1 className='text-lg font-medium text-gray-700'>
                 What do you want to ask
               </h1>

@@ -51,7 +51,7 @@ const Volunteer = () => {
         <div className='w-full px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:w-1/2 lg:px-8 lg:pb-24 lg:pt-16'>
           <div className='mx-auto max-w-lg text-center'>
             <Image src={Logo} alt='logo' className='mx-auto h-1/2 w-1/2' />
-            <h1 className='text-2xl font-bold sm:text-3xl'>
+            <h1 className='font-duke-charming text-2xl font-bold sm:text-3xl'>
               Get started today!
             </h1>
 

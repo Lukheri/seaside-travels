@@ -113,7 +113,7 @@ const PodcastSection = () => {
         </div>
       </div>
       <div className='p-8 pt-0 md:p-12 md:pt-0 lg:px-16'>
-        <div className='mx-auto flex max-w-6xl flex-col gap-8'>
+        <div className='mx-auto flex max-w-5xl flex-col gap-8'>
           <PodcastCard />
           <PodcastCard />
           <PodcastCard />

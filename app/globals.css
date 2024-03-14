@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Duke Charming';
+  src: url("../assets/fonts/Duke Charming DEMO.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +15,12 @@
 
 html{
   scroll-behavior: smooth;
+  font-size: 1.5rem;
+}
+
+.text-border-white {
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
 }
 
 .glass-navbar {
@@ -57,7 +68,6 @@ html{
 .hero-wave-layer1 {
   background-image: url("../assets/layered-waves-haikei.svg");
 }
-
 
 @keyframes slide {
   from {

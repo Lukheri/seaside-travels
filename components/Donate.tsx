@@ -59,7 +59,11 @@ const Donate = () => {
         <div className='mx-auto max-w-screen-2xl rounded-lg bg-theme-200/15 px-4 py-16 sm:px-6 lg:px-8'>
           <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
             <div className='lg:col-span-2 lg:py-12'>
-              <Image src={Logo} alt='logo' className='mx-auto h-1/2 w-1/2' />
+              <Image
+                src={Logo}
+                alt='logo'
+                className='mx-auto h-[300px] w-[300px]'
+              />
               <p className='max-w-xl text-lg'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 dolores laborum labore provident impedit esse recusandae facere
@@ -78,7 +82,7 @@ const Donate = () => {
               </div>
             </div>
 
-            <div className='rounded-lg  p-8 shadow-lg lg:col-span-3 lg:p-12'>
+            <div className='rounded-lg p-4 shadow-lg lg:col-span-3 lg:p-8 '>
               <form action='#' className='space-y-4'>
                 <div>
                   <label className='sr-only' htmlFor='name'>

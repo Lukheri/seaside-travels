@@ -14,8 +14,8 @@ const ProductSection = () => {
               <div className='wave'></div>
               <div className='z-10 mx-auto max-w-md text-center lg:text-left'>
                 <header>
-                  <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>
-                    Merch
+                  <h2 className='font-duke-charming text-xl font-bold text-gray-900 sm:text-3xl'>
+                    Featured
                   </h2>
 
                   <p className='mt-4 text-gray-900'>
@@ -108,7 +108,7 @@ const ProductSection = () => {
       <section>
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
           <header className='text-center'>
-            <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>
+            <h2 className='font-duke-charming text-2xl font-bold text-gray-900 sm:text-5xl'>
               New Collection
             </h2>
 

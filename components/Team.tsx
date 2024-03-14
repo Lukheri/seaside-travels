@@ -5,7 +5,7 @@ const Team = () => {
     <section className=''>
       <div className='mt-8 h-[32rem]'>
         <div className='container mx-auto px-6 py-10'>
-          <h1 className='text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl'>
+          <h1 className='font-duke-charming text-center text-3xl font-semibold capitalize text-gray-800 lg:text-5xl'>
             Meet the Team
           </h1>
 
@@ -29,7 +29,7 @@ const Team = () => {
             <div className='team-card border'>
               <img
                 className='aspect-square w-full rounded-xl object-cover'
-                src='https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
+                src='/users/courtney.jpg'
                 alt=''
               />
 
@@ -99,7 +99,7 @@ const Team = () => {
             <div className='team-card border'>
               <img
                 className='aspect-square w-full rounded-xl object-cover'
-                src='/users/ariel.jpg'
+                src='/users/ariel_orig.jpg'
                 alt=''
               />
 

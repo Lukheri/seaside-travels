@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import Image from 'next/image'
 import localFont from 'next/font/local'
-// import DukeCharmingFont from '@/assets/fonts/Duke Charming DEMO.otf'
 
 const myFont = localFont({
   src: '../assets/fonts/Duke Charming DEMO.otf',
@@ -14,11 +12,9 @@ const HeroBanner = () => {
   return (
     <>
       <div className='relative h-screen overflow-hidden'>
-        {/* <div className='ocean'> */}
         <div className='hero-wave wave1 z-10'></div>
         <div className='hero-wave wave2'></div>
         <div className='hero-wave wave3'></div>
-        {/* </div> */}
 
         <div
           className='flex h-full items-center justify-center'
@@ -97,11 +93,7 @@ const HeroBanner = () => {
           </a>
         </div>
       </div>
-      <div className='hero-wave-spacer hero-wave-layer1 relative flex items-center justify-center'>
-        <div className='absolute bottom-0 text-3xl tracking-wider'>
-          About Us
-        </div>
-      </div>
+      <div className='hero-wave-spacer hero-wave-layer1 relative flex items-center justify-center'></div>
     </>
   )
 }

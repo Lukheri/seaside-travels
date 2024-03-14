@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { League_Spartan } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const leagueSpartan = League_Spartan({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Seaside Travels',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={leagueSpartan.className}>
         <Navbar />
         {children}
         <Footer />

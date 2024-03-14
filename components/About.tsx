@@ -17,20 +17,26 @@ const About = () => {
 
   const { scrollYProgress: imageScrollYProgress } = useScroll({
     target: imageRef,
-    offset: ['0 1', '0.8 1'],
+    offset: ['0 1', '0.3 1'],
   })
 
   const { scrollYProgress: textScrollYProgress } = useScroll({
     target: textRef,
-    offset: ['0 1', '0.8 1'],
+    offset: ['0 1', '0.3 1'],
   })
 
   const imageXProgress = useTransform(imageScrollYProgress, [0, 1], [330, 0])
 
   const textXProgress = useTransform(textScrollYProgress, [0, 1], [-330, 0])
+
   return (
     <section id='about'>
-      <div className='animate mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
+      <div className='animate relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
+        <div
+          className={`font-duke-charming absolute right-1/2 top-5 translate-x-1/2 text-2xl tracking-wider sm:text-5xl md:-top-5 md:text-7xl lg:-top-[70px]`}
+        >
+          About Us
+        </div>
         <div className='grid grid-cols-1 lg:grid-cols-2'>
           <motion.div
             ref={imageRef}
@@ -52,19 +58,19 @@ const About = () => {
             className='relative hidden items-center bg-theme-primary/25 lg:flex'
           >
             <div
-              className='absolute  bottom-0 left-0 right-0 top-0'
-              style={{
-                backgroundImage: `url(/icons/logo_no_text.png)`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                opacity: '0.25',
-              }}
+              className='absolute bottom-0 left-0 right-0 top-0'
+              // style={{
+              //   backgroundImage: `url(/icons/logo_no_text.png)`,
+              //   backgroundSize: 'cover',
+              //   backgroundRepeat: 'no-repeat',
+              //   backgroundPosition: 'center',
+              //   opacity: '0.25',
+              // }}
             ></div>
             <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
-            <div className='p-8 sm:p-16 lg:p-24'>
-              <h2 className='text-2xl font-bold sm:text-3xl'>
+            <div className='p-8 sm:p-10 lg:p-12'>
+              <h2 className='text-2xl font-bold sm:text-xl'>
                 Started with Ariel, therapist, and her team seeing gaps in the
                 resources and care locally for our children and families with
                 unique abilities.
@@ -101,33 +107,24 @@ const About = () => {
               <div className='relative h-64 sm:h-96 lg:h-full'>
                 <img
                   alt=''
-                  src={'/users/ariel.jpg'}
+                  src={'/users/ariel_orig.jpg'}
                   className='absolute inset-0 h-full w-full object-cover'
                 />
               </div>
             </div>
 
             <div className='relative flex items-center bg-theme-primary/25 lg:hidden'>
-              <div
-                className='absolute  bottom-0 left-0 right-0 top-0'
-                style={{
-                  backgroundImage: `url(/icons/logo_no_text.png)`,
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  opacity: '0.25',
-                }}
-              ></div>
+              <div className='absolute  bottom-0 left-0 right-0 top-0'></div>
               <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
               <div className='p-8 sm:p-16 lg:p-24'>
-                <h2 className='text-2xl font-bold sm:text-3xl'>
+                <h2 className='text-3xl font-bold sm:text-3xl'>
                   Started with Ariel, therapist, and her team seeing gaps in the
                   resources and care locally for our children and families with
                   unique abilities.
                 </h2>
 
-                <p className='mt-4 text-black'>
+                <p className='mt-4 text-lg text-black'>
                   Ariel and her family love to travel the world and is always
                   pondering on her trips about how these adventures could be
                   accessible for children and their families. the idea is that

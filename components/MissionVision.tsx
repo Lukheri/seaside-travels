@@ -7,9 +7,13 @@ const MissionVision = () => {
     <>
       <section>
         <div className='mx-auto mt-8 flex max-w-screen-xl flex-col gap-8 lg:mt-16 lg:gap-16'>
-          <div className='flex flex-col gap-4 lg:flex-row lg:gap-8'>
-            <div className='w-full p-8 sm:p-16 lg:w-1/2 lg:p-24'>
-              <h2 className='text-2xl font-bold sm:text-3xl'>Mission</h2>
+          <div className='flex flex-col lg:flex-row'>
+            <div className='w-full p-8 sm:p-10 lg:w-1/2 lg:p-12'>
+              <h2
+                className={`font-duke-charming text-4xl font-bold sm:text-5xl`}
+              >
+                Mission
+              </h2>
 
               <p className='mt-4 text-gray-500'>
                 Seaside Travels is a non-profit organization committed to
@@ -22,7 +26,7 @@ const MissionVision = () => {
                 thrive and seamlessly integrate into society.
               </p>
             </div>
-            <div className='w-full px-4 sm:h-96 sm:px-8 lg:h-full lg:w-1/2 lg:px-16'>
+            <div className='w-full px-4 sm:px-8 lg:w-1/2 lg:px-16'>
               <img
                 alt=''
                 src='https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?q=80&w=1848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -31,16 +35,20 @@ const MissionVision = () => {
             </div>
           </div>
 
-          <div className='flex flex-col-reverse gap-4 lg:flex-row lg:gap-8'>
-            <div className='w-full px-4 sm:h-96 sm:px-8 lg:h-full lg:w-1/2 lg:px-16'>
+          <div className='flex flex-col-reverse lg:flex-row'>
+            <div className='w-full px-4 sm:px-8 lg:w-1/2 lg:px-16'>
               <img
                 alt=''
                 src='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                 className='h-full w-full rounded-lg object-cover'
               />
             </div>
-            <div className='w-full p-8 sm:p-16 lg:w-1/2 lg:p-24'>
-              <h2 className='text-2xl font-bold sm:text-3xl'>Vision</h2>
+            <div className='w-full p-8 sm:p-10 lg:w-1/2 lg:p-12'>
+              <h2
+                className={`font-duke-charming text-4xl font-bold sm:text-5xl`}
+              >
+                Vision
+              </h2>
 
               <p className='mt-4 text-gray-500'>
                 To envision a world where families with unique abilities thrive
@@ -51,9 +59,13 @@ const MissionVision = () => {
             </div>
           </div>
 
-          <div className='grid h-fit grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8'>
-            <div className='p-8 sm:p-16 lg:p-24'>
-              <h2 className='text-2xl font-bold sm:text-3xl'>Objectives</h2>
+          <div className='grid h-fit grid-cols-1 lg:grid-cols-2'>
+            <div className='p-8 sm:p-10 lg:p-12'>
+              <h2
+                className={`font-duke-charming text-2xl font-bold sm:text-5xl`}
+              >
+                Objectives
+              </h2>
 
               <ul className='mt-4 list-inside list-disc text-gray-500'>
                 <li>
@@ -111,16 +123,29 @@ const MissionVision = () => {
               </div>
             </div>
           </div>
-
-          <div className='mx-auto flex max-w-3xl flex-col items-center text-center sm:flex-row'>
+        </div>
+        <div className='relative my-11 w-full py-8'>
+          <div
+            className='absolute inset-0 bg-white opacity-45'
+            style={{
+              backgroundImage: `url(https://images.unsplash.com/photo-1503847752244-32e931070a43?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              filter: 'blur(7px)',
+            }}
+          ></div>
+          <div className='relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center sm:flex-row'>
             <Image src={Logo} alt='logo' className='mx-auto h-1/3 w-1/3' />
 
             <div className='sm:mr-8'>
-              <h2 className='text-2xl font-bold md:text-3xl'>
+              <h2
+                className={`font-duke-charming text-2xl font-bold text-theme-700 md:text-3xl`}
+              >
                 Empowering Every Child
               </h2>
 
-              <p className='hidden text-gray-500 sm:mt-4 sm:block'>
+              <p className='font-semibold text-theme-700 sm:mt-4 sm:block'>
                 Join us on our journey to create a future where every family is
                 supported, and every child has the chance to explore, learn, and
                 grow, contributing to a more inclusive and understanding world.

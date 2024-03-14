@@ -9,9 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "myrtle": "#4A8268",
-        "emerald": "#30645C",
-        "seafoam": "#84BE9D",
         "shoreline": "#A0825F",
         "warm-sand": "#C6A982",
         "theme-100": "#f7f6f9",
@@ -21,9 +18,13 @@ const config: Config = {
         "theme-500": "#5788A9",
         "theme-600": "#2B3D5E",
         "theme-700": "#0B3D5E",
+        "theme-800": "#062F49",
         "theme-primary": "#8fd8d2",
         "theme-secondary": "#FEE0C2",
         "theme-accent": "#F7F1D1",
+      },
+      fontFamily: {
+        "duke-charming": ['Duke Charming', 'sans'],
       },
       animation: {
         marquee: 'marquee 25s linear infinite',
