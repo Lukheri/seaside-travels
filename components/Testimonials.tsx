@@ -18,17 +18,17 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <main className='relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12'>
-          <div className='absolute -z-10 w-full rounded-2xl bg-theme-600 md:h-96'></div>
+        <main className='relative z-20 mt-8 w-full lg:flex lg:items-center xl:mt-12'>
+          <div className='absolute -z-10 w-full rounded-2xl bg-theme-600 lg:h-96'></div>
 
-          <div className='w-full rounded-2xl bg-theme-600 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12'>
+          <div className='w-full rounded-2xl bg-theme-600 p-6 lg:flex lg:items-center lg:justify-evenly lg:bg-transparent lg:p-0 lg:px-12'>
             <img
-              className='h-24 w-24 rounded-full object-cover shadow-md md:mx-6 md:h-[32rem] md:w-80 md:rounded-2xl lg:h-[36rem] lg:w-[26rem]'
+              className='h-24 w-24 rounded-full object-cover shadow-md lg:mx-6 lg:h-[32rem] lg:h-[36rem] lg:w-80 lg:w-[26rem] lg:rounded-2xl'
               src='https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
               alt='client photo'
             />
 
-            <div className='mt-2 md:mx-6'>
+            <div className='mt-2 lg:mx-6'>
               <div>
                 <p className='text-xl font-medium tracking-tight text-white'>
                   Ema Watson

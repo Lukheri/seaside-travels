@@ -92,7 +92,7 @@ const Navbar = () => {
         <Announcements />
         <div
           onClick={() => setIsSidebarOpen(true)}
-          className='btn btn-ghost absolute top-10 z-[51] sm:top-12'
+          className='btn btn-ghost absolute top-10 z-[51] sm:top-12 lg:hidden'
         >
           <Menu />
         </div>
