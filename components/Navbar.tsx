@@ -6,8 +6,9 @@ import Image from 'next/image'
 import { Menu } from 'lucide-react'
 
 const Navbar = () => {
-  const [isAtTop, setIsAtTop] = useState(true)
-  const [isScrollingDown, setIsScrollingDown] = useState(false)
+  const [isAtTop, setIsAtTop] = useState<boolean>(true)
+  const [isScrollingDown, setIsScrollingDown] = useState<boolean>(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
 
   useEffect(() => {
     let timeout: NodeJS.Timeout | undefined
@@ -38,110 +39,113 @@ const Navbar = () => {
   }, [])
 
   return (
-    <div
-      className={`glass-navbar fixed top-0 z-50 flex w-full flex-col bg-primary ${isScrollingDown ? '-translate-y-[160px]' : isAtTop ? 'translate-y-0' : '-translate-y-[50px]'}`}
-      style={{ transition: 'transform 0.3s ease' }}
-    >
-      <Announcements />
-      <div className='relative flex h-[90px] items-center justify-between px-4 sm:h-[110px]'>
-        <div className={`drawer block sm:hidden`}>
-          <input id='my-drawer' type='checkbox' className='drawer-toggle' />
-          <div className='drawer-content'>
-            <label htmlFor='my-drawer' className='btn drawer-button'>
-              <Menu />
-            </label>
-          </div>
-          <div
-            className={`drawer-side ${isAtTop ? 'translate-y-0' : 'translate-y-[50px]'}`}
-          >
-            <label
-              htmlFor='my-drawer'
-              aria-label='close sidebar'
-              className='drawer-overlay'
-            ></label>
-            <ul className='menu min-h-full w-80 bg-base-200 p-4 text-base-content'>
-              <li>
-                <Image
-                  src={Logo}
-                  alt='logo'
-                  width={150}
-                  height={150}
-                  className='mx-auto flex cursor-pointer sm:hidden'
-                />
-              </li>
-              <li>
-                <a href='#merch'>
-                  <span className='mx-1 text-sm sm:text-base'>Merch</span>
-                </a>
-              </li>
+    <>
+      <div
+        onClick={(e: any) => {
+          e.preventDefault()
+          setIsSidebarOpen(false)
+        }}
+        className={`${isSidebarOpen ? 'block' : 'hidden'} fixed top-0 z-[60] h-[100dvh] w-full bg-black opacity-50 transition-transform ease-in`}
+      ></div>
+      <div
+        className={`${isSidebarOpen ? 'translate-x-0' : '-translate-x-[100%]'} fixed top-0 z-[61] h-[100dvh] w-[80%] bg-base-200 shadow-xl transition-transform ease-in`}
+      >
+        <ul className='menu z-50 min-h-full p-4 text-base-content'>
+          <li>
+            <Image
+              src={Logo}
+              alt='logo'
+              width={150}
+              height={150}
+              className='mx-auto flex cursor-pointer sm:hidden'
+            />
+          </li>
+          <li>
+            <a href='#merch' onClick={() => setIsSidebarOpen(false)}>
+              <span className='mx-1 text-sm sm:text-base'>Merch</span>
+            </a>
+          </li>
 
-              <li>
-                <a href='#events'>
-                  <span className='mx-1 text-sm sm:text-base'>Events</span>
-                </a>
-              </li>
+          <li>
+            <a href='#events' onClick={() => setIsSidebarOpen(false)}>
+              <span className='mx-1 text-sm sm:text-base'>Events</span>
+            </a>
+          </li>
 
-              <li>
-                <a href='#podcast'>
-                  <span className='mx-1 text-sm sm:text-base'>Podcast</span>
-                </a>
-              </li>
+          <li>
+            <a href='#podcast' onClick={() => setIsSidebarOpen(false)}>
+              <span className='mx-1 text-sm sm:text-base'>Podcast</span>
+            </a>
+          </li>
 
-              <li>
-                <a href='#donate'>
-                  <span className='mx-1 text-sm sm:text-base'>Donate</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <li>
+            <a href='#donate' onClick={() => setIsSidebarOpen(false)}>
+              <span className='mx-1 text-sm sm:text-base'>Donate</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className={`glass-navbar fixed top-0 z-50 flex w-full flex-col bg-primary ${isScrollingDown ? '-translate-y-[160px]' : isAtTop ? 'translate-y-0' : '-translate-y-[50px]'}`}
+        style={{ transition: 'transform 0.3s ease' }}
+      >
+        <Announcements />
+        <div
+          onClick={() => setIsSidebarOpen(true)}
+          className='btn btn-ghost absolute top-10 z-[51]'
+        >
+          <Menu />
         </div>
-        <a href='#'>
-          <Image
-            src={Logo}
-            alt='logo'
-            width={70}
-            height={70}
-            className='hidden cursor-pointer transition-transform ease-in hover:scale-110 sm:flex'
-          />
-        </a>
 
-        <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6 lg:gap-10'>
-          <a
-            href='#merch'
-            className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
-          >
-            <span className='mx-1 text-sm sm:text-base'>Merch</span>
+        <div className='relative flex h-[90px] items-center justify-between sm:h-[110px] md:px-4'>
+          <a href='#'>
+            <Image
+              src={Logo}
+              alt='logo'
+              width={70}
+              height={70}
+              className='hidden cursor-pointer transition-transform ease-in hover:scale-110 sm:flex'
+            />
           </a>
 
-          <a
-            href='#events'
-            className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
-          >
-            <span className='mx-1 text-sm sm:text-base'>Events</span>
-          </a>
+          <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6 lg:gap-6'>
+            <a
+              href='#merch'
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
+              <span className='mx-1 text-sm sm:text-base'>Merch</span>
+            </a>
 
-          <a
-            href='#podcast'
-            className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
-          >
-            <span className='mx-1 text-sm sm:text-base'>Podcast</span>
-          </a>
+            <a
+              href='#events'
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
+              <span className='mx-1 text-sm sm:text-base'>Events</span>
+            </a>
 
-          <a
-            href='#donate'
-            className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
-          >
-            <span className='mx-1 text-sm sm:text-base'>Donate</span>
-          </a>
-          <a
-            href='#contact-us'
-            className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
-          >
-            <span className='mx-1 text-sm sm:text-base'>Contact Us</span>
-          </a>
+            <a
+              href='#podcast'
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
+              <span className='mx-1 text-sm sm:text-base'>Podcast</span>
+            </a>
+
+            <a
+              href='#donate'
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
+              <span className='mx-1 text-sm sm:text-base'>Donate</span>
+            </a>
+            <a
+              href='#contact-us'
+              className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'
+            >
+              <span className='mx-1 text-sm sm:text-base'>Contact Us</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
