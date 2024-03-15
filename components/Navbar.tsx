@@ -57,7 +57,7 @@ const Navbar = () => {
               alt='logo'
               width={150}
               height={150}
-              className='mx-auto flex cursor-pointer sm:hidden'
+              className='mx-auto flex cursor-pointer'
             />
           </li>
           <li>
@@ -86,13 +86,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div
-        className={`glass-navbar fixed top-0 z-50 flex w-full flex-col bg-primary ${isScrollingDown ? '-translate-y-[160px]' : isAtTop ? 'translate-y-0' : '-translate-y-[50px]'}`}
+        className={`glass-navbar fixed top-0 z-50 flex w-full flex-col bg-primary ${isScrollingDown ? '-translate-y-[170px]' : isAtTop ? 'translate-y-0' : '-translate-y-[60px]'}`}
         style={{ transition: 'transform 0.3s ease' }}
       >
         <Announcements />
         <div
           onClick={() => setIsSidebarOpen(true)}
-          className='btn btn-ghost absolute top-10 z-[51]'
+          className='btn btn-ghost absolute top-10 z-[51] sm:top-12'
         >
           <Menu />
         </div>
@@ -104,11 +104,11 @@ const Navbar = () => {
               alt='logo'
               width={70}
               height={70}
-              className='hidden cursor-pointer transition-transform ease-in hover:scale-110 sm:flex'
+              className='hidden cursor-pointer transition-transform ease-in hover:scale-110 lg:flex'
             />
           </a>
 
-          <div className='absolute left-1/2 hidden -translate-x-1/2 sm:flex sm:gap-0 md:gap-6 lg:gap-6'>
+          <div className='absolute left-1/2 hidden -translate-x-1/2 sm:gap-0 md:gap-6 lg:flex lg:gap-6'>
             <a
               href='#merch'
               className='-px-1 cursor-base -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-2 py-2 text-center text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4'

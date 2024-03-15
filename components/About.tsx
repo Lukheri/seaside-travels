@@ -33,7 +33,7 @@ const About = () => {
     <section id='about'>
       <div className='animate relative mx-auto max-w-screen-xl sm:px-6 lg:px-8 lg:py-16'>
         <div
-          className={`absolute right-1/2 top-5 translate-x-1/2 font-duke-charming text-2xl tracking-wider sm:text-5xl md:-top-5 md:text-7xl lg:-top-[70px]`}
+          className={`absolute right-1/2 top-5 translate-x-1/2 font-duke-charming text-3xl tracking-wider sm:text-5xl md:-top-5 lg:-top-[70px] lg:text-7xl`}
         >
           About Us
         </div>

@@ -8,11 +8,11 @@ const PodcastSection = () => {
       <div className='p-8 md:p-12 lg:px-16 lg:py-24'>
         <div className='mx-auto flex max-w-3xl flex-col items-center text-center sm:flex-row'>
           <div className='sm:mr-8'>
-            <h2 className='text-2xl font-bold md:text-3xl'>
+            <h2 className='text-xl font-bold md:text-2xl'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit
             </h2>
 
-            <p className='hidden sm:mt-4 sm:block'>
+            <p className='hidden text-sm sm:mt-4 sm:block md:text-base'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
               egestas tempus tellus etiam sed. Quam a scelerisque amet
               ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
@@ -20,7 +20,7 @@ const PodcastSection = () => {
             </p>
           </div>
 
-          <div className='flex flex-col md:flex-row md:gap-8'>
+          <div className='flex flex-col md:gap-8 lg:flex-row'>
             <div className='mt-4 md:mt-8'>
               <a
                 className='group relative inline-block text-sm font-medium text-theme-500 transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 focus:outline-none focus:ring active:text-theme-500'
@@ -112,7 +112,7 @@ const PodcastSection = () => {
           </div>
         </div>
       </div>
-      <div className='p-8 pt-0 md:p-12 md:pt-0 lg:px-16'>
+      <div className='p-2 pt-0 md:pt-0 lg:px-12'>
         <div className='mx-auto flex max-w-5xl flex-col gap-8'>
           <PodcastCard />
           <PodcastCard />

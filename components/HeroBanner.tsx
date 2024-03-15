@@ -55,17 +55,17 @@ const HeroBanner = () => {
           </div> */}
           <div className='absolute top-[160px] text-black sm:top-[180px]'>
             <img
-              src='/icons/logo_text.png'
-              className='mx-auto h-auto w-[320px] sm:w-[360px] md:w-[400px] lg:w-[480px]'
+              src='/icons/logo1.png'
+              className='mx-auto h-auto w-[240px] sm:w-[260px] md:w-[280px] lg:w-[330px]'
             />
-            <p
+            {/* <p
               className={`mt-4 text-center font-sans text-lg italic text-theme-700 md:text-2xl`}
             >
               Diverse Abilities, Shared Horizons
-            </p>
+            </p> */}
           </div>
           <a
-            className='group absolute bottom-[calc(12%+60px)] inline-flex items-center overflow-hidden border border-theme-500 bg-theme-700 px-10 py-5 text-theme-accent'
+            className='group absolute bottom-[calc(12%+20px)] inline-flex items-center overflow-hidden border border-theme-500 bg-theme-700 px-8 py-4 text-theme-accent'
             href='https://www.etsy.com/shop/seasidetherapy/?etsrc=sdt'
             target='_blank'
           >
@@ -86,9 +86,8 @@ const HeroBanner = () => {
               </svg>
             </span>
 
-            <span className='text-xs font-medium transition-all group-hover:me-4 sm:text-sm'>
-              {' '}
-              Shop now{' '}
+            <span className='text-xs font-medium transition-all group-hover:me-4'>
+              Shop now
             </span>
           </a>
         </div>

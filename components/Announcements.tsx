@@ -33,7 +33,7 @@ const Announcements = () => {
   }, [])
 
   return (
-    <div className='flex h-[50px] items-center bg-primary px-4 py-2'>
+    <div className='flex h-[60px] items-center bg-primary px-4 py-2'>
       <div className='mx-auto flex w-full max-w-3xl items-center justify-center'>
         <button
           className='swiper-prev-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition'
@@ -56,8 +56,8 @@ const Announcements = () => {
         <div className='swiper'>
           <div className='swiper-wrapper'>
             <div className='swiper-slide'>
-              <p className='text-center text-sm font-medium text-gray-900'>
-                Love our merch?{' '}
+              <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
+                Love our merch?
                 <a href='#merch' className='block underline sm:inline-block'>
                   Check out whats new!
                 </a>
@@ -65,7 +65,7 @@ const Announcements = () => {
             </div>
 
             <div className='swiper-slide'>
-              <p className='text-center text-sm font-medium text-gray-900'>
+              <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
                 Get ready for new events.{' '}
                 <a href='#events' className='block underline sm:inline-block'>
                   Learn more!
@@ -74,7 +74,7 @@ const Announcements = () => {
             </div>
 
             <div className='swiper-slide'>
-              <p className='text-center text-sm font-medium text-gray-900'>
+              <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
                 Listen to our podcast!{' '}
                 <a href='#podcast' className='block underline sm:inline-block'>
                   Listen here!
