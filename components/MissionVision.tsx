@@ -145,7 +145,7 @@ const MissionVision = () => {
                 Empowering Every Child
               </h2>
 
-              <p className='font-semibold text-theme-700 sm:mt-4 sm:block'>
+              <p className='text-theme-700 sm:mt-4 sm:block md:font-semibold'>
                 Join us on our journey to create a future where every family is
                 supported, and every child has the chance to explore, learn, and
                 grow, contributing to a more inclusive and understanding world.
