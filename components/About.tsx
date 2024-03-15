@@ -31,9 +31,9 @@ const About = () => {
 
   return (
     <section id='about'>
-      <div className='animate relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
+      <div className='animate relative mx-auto max-w-screen-xl sm:px-6 lg:px-8 lg:py-16'>
         <div
-          className={`font-duke-charming absolute right-1/2 top-5 translate-x-1/2 text-2xl tracking-wider sm:text-5xl md:-top-5 md:text-7xl lg:-top-[70px]`}
+          className={`absolute right-1/2 top-5 translate-x-1/2 font-duke-charming text-2xl tracking-wider sm:text-5xl md:-top-5 md:text-7xl lg:-top-[70px]`}
         >
           About Us
         </div>
@@ -118,13 +118,13 @@ const About = () => {
               <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
               <div className='p-8 sm:p-16 lg:p-24'>
-                <h2 className='text-3xl font-bold sm:text-3xl'>
+                <h2 className='text-lg font-bold'>
                   Started with Ariel, therapist, and her team seeing gaps in the
                   resources and care locally for our children and families with
                   unique abilities.
                 </h2>
 
-                <p className='mt-4 text-lg text-black'>
+                <p className='mt-4 text-black'>
                   Ariel and her family love to travel the world and is always
                   pondering on her trips about how these adventures could be
                   accessible for children and their families. the idea is that
