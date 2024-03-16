@@ -1,5 +1,6 @@
 'use client'
 import React, { useRef, useState } from 'react'
+import Image from 'next/image'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -14,7 +15,7 @@ import { FreeMode, Pagination, Navigation, Autoplay } from 'swiper/modules'
 const ProductCarousel = () => {
   return (
     <>
-      <div className='flex h-[350px] justify-center px-4 py-2'>
+      <div className='flex h-[400px] justify-center'>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -51,38 +52,157 @@ const ProductCarousel = () => {
           className='mySwiper'
         >
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
           <SwiperSlide className=''>
-            <div className='flex h-full items-center justify-center bg-white'>
-              Slide 1
+            <div className='flex h-full flex-col items-center justify-center gap-3'>
+              {/* <div className='carousel-card'>
+                <img
+                  src='/products/Mug/mug alt.jpg'
+                  className='h-full w-auto'
+                />
+              </div> */}
+              <div className='carousel-card relative overflow-hidden'>
+                <Image
+                  src='/products/Mug/mug alt.jpg'
+                  alt='product'
+                  // className='carousel-card'
+                  layout='fill'
+                  objectFit='content'
+                  // width={190}
+                  // height={254}
+                />
+              </div>
+              Mugs
             </div>
           </SwiperSlide>
         </Swiper>
