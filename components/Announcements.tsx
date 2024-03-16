@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
-import Swiper from 'swiper'
+// import Swiper from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 
 // Import Swiper styles
@@ -10,32 +11,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
 const Announcements = () => {
-  useEffect(() => {
-    const swiper = new Swiper('.swiper', {
-      modules: [Autoplay, Navigation, Pagination],
-      effect: 'fade',
-      loop: true,
-      autoplay: {
-        delay: 5000,
-      },
-      fadeEffect: {
-        crossFade: true,
-      },
-      navigation: {
-        prevEl: '.swiper-prev-button',
-        nextEl: '.swiper-next-button',
-      },
-    })
-
-    return () => {
-      swiper.destroy()
-    }
-  }, [])
-
   return (
     <div className='flex h-[60px] items-center bg-primary px-4 py-2'>
       <div className='mx-auto flex w-full max-w-3xl items-center justify-center'>
-        <button
+        {/* <button
           className='swiper-prev-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition'
           aria-label='Previous slide'
         >
@@ -51,40 +30,49 @@ const Announcements = () => {
               clipRule='evenodd'
             />
           </svg>
-        </button>
+        </button> */}
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          // navigation={true}
+          modules={[Autoplay]}
+          className='mySwiper'
+        >
+          <SwiperSlide>
+            <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
+              Love our merch?
+              <a href='#merch' className='block underline sm:inline-block'>
+                Check out whats new!
+              </a>
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
+              Get ready for new events.{' '}
+              <a href='#events' className='block underline sm:inline-block'>
+                Learn more!
+              </a>
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
+              Listen to our podcast!{' '}
+              <a href='#podcast' className='block underline sm:inline-block'>
+                Listen here!
+              </a>
+            </p>
+          </SwiperSlide>
+        </Swiper>
 
-        <div className='swiper'>
-          <div className='swiper-wrapper'>
-            <div className='swiper-slide'>
-              <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
-                Love our merch?
-                <a href='#merch' className='block underline sm:inline-block'>
-                  Check out whats new!
-                </a>
-              </p>
-            </div>
-
-            <div className='swiper-slide'>
-              <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
-                Get ready for new events.{' '}
-                <a href='#events' className='block underline sm:inline-block'>
-                  Learn more!
-                </a>
-              </p>
-            </div>
-
-            <div className='swiper-slide'>
-              <p className='text-center text-xs font-medium text-gray-900 lg:text-sm'>
-                Listen to our podcast!{' '}
-                <a href='#podcast' className='block underline sm:inline-block'>
-                  Listen here!
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <button
+        {/* <button
           className='swiper-next-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition'
           aria-label='Next slide'
         >
@@ -100,7 +88,7 @@ const Announcements = () => {
               clipRule='evenodd'
             />
           </svg>
-        </button>
+        </button> */}
       </div>
     </div>
   )
