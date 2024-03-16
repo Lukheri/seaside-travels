@@ -24,7 +24,7 @@ html{
 }
 
 .glass-navbar {
-  background: rgba(247, 241, 209, 0.6);
+  background: rgba(255, 252, 238, 0.6);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
