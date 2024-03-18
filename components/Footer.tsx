@@ -5,13 +5,14 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className='bg-gray-100'>
-      <div className='mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8'>
+      <div className='mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8'>
         <Image
           src={Logo}
           alt='logo'
-          height={90}
-          width={90}
+          height={200}
+          width={200}
           className='mx-auto'
+          unoptimized
         />
 
         <p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500'>
@@ -25,8 +26,7 @@ const Footer = () => {
               className='text-gray-700 transition hover:text-gray-700/75'
               href='#merch'
             >
-              {' '}
-              Merch{' '}
+              Merch
             </a>
           </li>
 
@@ -35,8 +35,7 @@ const Footer = () => {
               className='text-gray-700 transition hover:text-gray-700/75'
               href='#about'
             >
-              {' '}
-              About{' '}
+              About
             </a>
           </li>
 
@@ -45,8 +44,7 @@ const Footer = () => {
               className='text-gray-700 transition hover:text-gray-700/75'
               href='#podcast'
             >
-              {' '}
-              Podcast{' '}
+              Podcast
             </a>
           </li>
 
@@ -55,8 +53,7 @@ const Footer = () => {
               className='text-gray-700 transition hover:text-gray-700/75'
               href='#events'
             >
-              {' '}
-              Events{' '}
+              Events
             </a>
           </li>
 
@@ -65,8 +62,7 @@ const Footer = () => {
               className='text-gray-700 transition hover:text-gray-700/75'
               href='#donate'
             >
-              {' '}
-              Donate{' '}
+              Donate
             </a>
           </li>
 
@@ -75,8 +71,7 @@ const Footer = () => {
               className='text-gray-700 transition hover:text-gray-700/75'
               href='#'
             >
-              {' '}
-              Misson & Vision{' '}
+              Misson & Vision
             </a>
           </li>
         </ul>
