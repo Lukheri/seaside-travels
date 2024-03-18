@@ -14,23 +14,6 @@ const Announcements = () => {
   return (
     <div className='flex h-[60px] items-center bg-primary px-4 py-2'>
       <div className='mx-auto flex w-full max-w-3xl items-center justify-center'>
-        {/* <button
-          className='swiper-prev-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition'
-          aria-label='Previous slide'
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='size-5 rtl:rotate-180'
-            viewBox='0 0 20 20'
-            fill='currentColor'
-          >
-            <path
-              fillRule='evenodd'
-              d='M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z'
-              clipRule='evenodd'
-            />
-          </svg>
-        </button> */}
         <Swiper
           spaceBetween={30}
           centeredSlides={true}

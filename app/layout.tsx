@@ -3,6 +3,9 @@ import { League_Spartan } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { register } from 'swiper/element/bundle'
+// register Swiper custom elements
+register()
 
 const leagueSpartan = League_Spartan({ subsets: ['latin'] })
 

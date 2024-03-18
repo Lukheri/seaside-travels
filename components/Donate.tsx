@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Logo from '@/public/icons/logo.png'
+import { MapPin, Phone } from 'lucide-react'
 
 const Donate = () => {
   return (
@@ -71,13 +72,15 @@ const Donate = () => {
               </p>
 
               <div className='mt-8'>
-                <a href='#' className='text-2xl font-bold text-theme-700'>
-                  {' '}
-                  0151 475 4450{' '}
+                <a
+                  href='#'
+                  className='flex items-center gap-2 text-2xl font-bold text-theme-700'
+                >
+                  <Phone strokeWidth={3} /> (239) 392-1070
                 </a>
 
-                <address className='mt-2 not-italic'>
-                  282 Kevin Brook, Imogeneborough, CA 58517
+                <address className='mt-2 flex items-center gap-2 not-italic'>
+                  <MapPin /> 5625 Strand Blvd Suite 512 Naples FL, 34110
                 </address>
               </div>
             </div>
