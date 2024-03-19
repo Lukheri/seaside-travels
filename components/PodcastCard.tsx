@@ -22,18 +22,31 @@ const PodcastCard = () => {
       className='rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8'
     >
       <div className='flex flex-col items-center gap-4 sm:flex-row sm:gap-8'>
-        {/* <div className='h-auto w-full sm:h-[450px] sm:w-[450px]'> */}
         <img
           src='/podcast thumbnails/ep1_thumbnail.jpg'
           alt='thumbnail'
           className='h-auto w-full cursor-pointer rounded-lg sm:h-[300px] sm:w-[300px] md:h-[350px] md:w-[350px]'
         />
-        {/* </div> */}
 
         <div>
-          <strong className='rounded border border-theme-500 bg-theme-500 px-3 py-1.5 text-[10px] font-medium text-white'>
-            Pilot Episode
-          </strong>
+          <div className='flex flex-col items-center gap-3 md:flex-row'>
+            <strong className='rounded border border-theme-500 bg-theme-500 px-3 py-1.5 text-xs font-medium text-white'>
+              Pilot Episode
+            </strong>
+
+            <ul className='visualizer-menu'>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
 
           <h3 className='mt-4 text-lg font-medium sm:text-xl'>
             <a
@@ -41,8 +54,7 @@ const PodcastCard = () => {
               target='_blank'
               className='hover:underline'
             >
-              {' '}
-              Waves of Wisdom: Pilot{' '}
+              Waves of Wisdom: Pilot
             </a>
           </h3>
 

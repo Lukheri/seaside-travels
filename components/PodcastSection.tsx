@@ -30,14 +30,13 @@ const PodcastSection = () => {
                 <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-1 group-hover:translate-y-1'></span>
 
                 <span className='relative flex items-center justify-center gap-4 border border-current bg-white px-8 py-3'>
-                  {' '}
-                  Listen on Youtube{' '}
+                  Listen on Youtube
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     x='0px'
                     y='0px'
-                    width='40'
-                    height='40'
+                    width='60'
+                    height='60'
                     viewBox='0 0 100 100'
                   >
                     <path
@@ -78,14 +77,13 @@ const PodcastSection = () => {
                 <span className='absolute inset-0 translate-x-0 translate-y-0 bg-theme-500 transition-transform group-hover:translate-x-1 group-hover:translate-y-1'></span>
 
                 <span className='relative flex items-center justify-center gap-4 border border-current bg-white px-8 py-3'>
-                  {' '}
-                  Listen on Spotify{' '}
+                  Listen on Spotify
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     x='0px'
                     y='0px'
-                    width='40'
-                    height='40'
+                    width='60'
+                    height='60'
                     viewBox='0 0 100 100'
                   >
                     <path
