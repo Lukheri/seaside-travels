@@ -130,11 +130,15 @@ const MissionVision = () => {
             }}
           ></div>
           <div className='relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center sm:flex-row'>
-            <Image src={Logo} alt='logo' className='mx-auto h-1/3 w-1/3' />
+            <Image
+              src={Logo}
+              alt='logo'
+              className='h-/2 mx-auto w-1/2 sm:h-1/3 sm:w-1/3'
+            />
 
             <div className='sm:mr-8'>
               <h2 className='font-duke-charming text-xl font-bold text-theme-700 md:text-3xl'>
-                Empowering Every Child
+                Diverse Abilities, <br /> Shared Horizons
               </h2>
 
               <p className='px-4 text-xs text-theme-700 sm:mt-4 sm:block md:text-base'>

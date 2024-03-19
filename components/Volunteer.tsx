@@ -1,11 +1,39 @@
+'use client'
 import React from 'react'
 import Logo from '@/public/icons/logo.png'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    x: 50,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transiton: { duration: 1 },
+  },
+}
 
 const Volunteer = () => {
   return (
     <>
-      <section id='events'>
+      <motion.section
+        initial={{
+          opacity: 0,
+          x: -100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        viewport={{ once: true }}
+        id='events'
+      >
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8'>
           <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
             <div className='grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2'>
@@ -46,8 +74,23 @@ const Volunteer = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className='relative flex flex-wrap lg:h-screen lg:items-center'>
+      </motion.section>
+      <motion.section
+        initial={{
+          opacity: 0,
+          x: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        viewport={{ once: true }}
+        id='events'
+        className='relative flex flex-wrap lg:h-screen lg:items-center'
+      >
         <div className='w-full px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:w-1/2 lg:px-8 lg:pb-24 lg:pt-16'>
           <div className='mx-auto max-w-lg text-center'>
             <Image src={Logo} alt='logo' className='mx-auto h-1/2 w-1/2' />
@@ -156,7 +199,7 @@ const Volunteer = () => {
             className='absolute inset-0 h-full w-full object-cover'
           />
         </div>
-      </section>
+      </motion.section>
     </>
   )
 }

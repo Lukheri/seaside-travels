@@ -21,8 +21,8 @@ const ProductSection = () => {
                   </h2>
 
                   <p className='mt-4 text-gray-900'>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quas rerum quam amet provident nulla error!
+                    Discover our handpicked favorites for you! Shop now and find
+                    exclusive deals on top-rated products.
                   </p>
                 </header>
 
@@ -61,11 +61,11 @@ const ProductSection = () => {
                     </div>
 
                     <div className='mt-3'>
-                      <h3 className='font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4'>
+                      <h3 className='font-medium group-hover:underline group-hover:underline-offset-4'>
                         Mug
                       </h3>
 
-                      <p className='mt-1 text-sm text-gray-700'>PHP 426.16</p>
+                      <p className='mt-1 text-sm text-theme-700'>PHP 426.16</p>
                     </div>
                   </a>
                 </li>
@@ -93,11 +93,13 @@ const ProductSection = () => {
                     </div>
 
                     <div className='mt-3'>
-                      <h3 className='font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4'>
+                      <h3 className='font-medium group-hover:underline group-hover:underline-offset-4'>
                         Long Sleeves
                       </h3>
 
-                      <p className='mt-1 text-sm text-gray-700'>PHP 1,627.91</p>
+                      <p className='mt-1 text-sm text-theme-700'>
+                        PHP 1,627.91
+                      </p>
                     </div>
                   </a>
                 </li>
@@ -115,9 +117,8 @@ const ProductSection = () => {
             </h2>
 
             <p className='mx-auto mt-4 max-w-md text-theme-500'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-              praesentium cumque iure dicta incidunt est ipsam, officia dolor
-              fugit natus?
+              Check out our newest merch lineup! From limited edition releases
+              to fan favorites, {"there's"} something for everyone.
             </p>
           </header>
 
