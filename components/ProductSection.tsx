@@ -2,6 +2,9 @@ import React from 'react'
 import Marquee from './Marquee'
 import Image from 'next/image'
 import ProductCarousel from './ProductCarousel'
+import Product1 from '@/public/products/Tote bag/turtle 1.png'
+import Product2 from '@/public/products/Shirt/shirt turtle.png'
+import Product3 from '@/public/products/Hoodie/hoodie ver 3.png'
 
 const ProductSection = () => {
   return (
@@ -129,11 +132,16 @@ const ProductSection = () => {
                 target='_blank'
                 className='group relative block'
               >
-                <img
-                  src='/products/Tote bag/turtle.png'
+                <Image
+                  src={Product1}
                   alt=''
                   className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
                 />
+                {/* <img
+                  src='/products/Tote bag/turtle.png'
+                  alt=''
+                  className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
+                /> */}
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
                   <h3 className='text-xl font-medium text-theme-700'>
@@ -153,11 +161,16 @@ const ProductSection = () => {
                 target='_blank'
                 className='group relative block'
               >
-                <img
-                  src='/products/Shirt/shirt turtle.png'
+                <Image
+                  src={Product2}
                   alt=''
                   className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
                 />
+                {/* <img
+                  src='/products/Shirt/shirt turtle.png' 
+                  alt=''
+                  className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
+                /> */}
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
                   <h3 className='text-xl font-medium text-theme-700'>Shirts</h3>
@@ -175,11 +188,16 @@ const ProductSection = () => {
                 target='_blank'
                 className='group relative block'
               >
-                <img
-                  src='/products/Hoodie/hoodie ver 3.png'
+                <Image
+                  src={Product3}
                   alt=''
                   className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
                 />
+                {/* <img
+                  src='/products/Hoodie/hoodie ver 3.png' 
+                  alt=''
+                  className='aspect-square w-full rounded-lg object-cover transition duration-500 group-hover:opacity-90'
+                /> */}
 
                 <div className='absolute inset-0 flex flex-col items-start justify-end p-6'>
                   <h3 className='text-xl font-medium text-theme-700'>
