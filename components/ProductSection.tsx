@@ -110,11 +110,11 @@ const ProductSection = () => {
       <section>
         <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
           <header className='text-center'>
-            <h2 className='font-duke-charming text-2xl font-bold text-gray-900 sm:text-5xl'>
+            <h2 className='font-duke-charming text-2xl font-bold text-theme-800 sm:text-5xl'>
               New Collection
             </h2>
 
-            <p className='mx-auto mt-4 max-w-md text-gray-500'>
+            <p className='mx-auto mt-4 max-w-md text-theme-500'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
               praesentium cumque iure dicta incidunt est ipsam, officia dolor
               fugit natus?

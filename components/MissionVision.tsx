@@ -9,13 +9,11 @@ const MissionVision = () => {
         <div className='mx-auto mt-8 flex max-w-screen-xl flex-col gap-8 lg:mt-16 lg:gap-16'>
           <div className='flex flex-col lg:flex-row'>
             <div className='w-full p-8 sm:p-10 lg:w-1/2 lg:p-12'>
-              <h2
-                className={`font-duke-charming text-4xl font-bold sm:text-5xl`}
-              >
+              <h2 className='font-duke-charming text-4xl font-bold text-theme-700 sm:text-5xl'>
                 Mission
               </h2>
 
-              <p className='mt-4 text-gray-500'>
+              <p className='mt-4 text-theme-500'>
                 Seaside Travels is a non-profit organization committed to
                 uniting families with unique abilities by offering vital
                 resources and educational support on medical topics. Our mission
@@ -44,13 +42,11 @@ const MissionVision = () => {
               />
             </div>
             <div className='w-full p-8 sm:p-10 lg:w-1/2 lg:p-12'>
-              <h2
-                className={`font-duke-charming text-4xl font-bold sm:text-5xl`}
-              >
+              <h2 className='font-duke-charming text-4xl font-bold text-theme-700 sm:text-5xl'>
                 Vision
               </h2>
 
-              <p className='mt-4 text-gray-500'>
+              <p className='mt-4 text-theme-500'>
                 To envision a world where families with unique abilities thrive
                 in a supportive and inclusive community, where children are
                 empowered to explore the wonders of the world, breaking down
@@ -61,13 +57,11 @@ const MissionVision = () => {
 
           <div className='grid h-fit grid-cols-1 lg:grid-cols-2'>
             <div className='p-8 sm:p-10 lg:p-12'>
-              <h2
-                className={`font-duke-charming text-2xl font-bold sm:text-5xl`}
-              >
+              <h2 className='font-duke-charming text-2xl font-bold text-theme-700 sm:text-5xl'>
                 Objectives
               </h2>
 
-              <ul className='mt-4 list-inside list-disc text-gray-500'>
+              <ul className='mt-4 list-inside list-disc text-theme-500'>
                 <li>
                   Empowering Families: Provide essential resources and support
                   to families with children having unique abilities, creating a
@@ -128,7 +122,7 @@ const MissionVision = () => {
           <div
             className='absolute inset-0 bg-white opacity-45'
             style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1503847752244-32e931070a43?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+              backgroundImage: `url(https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
@@ -139,13 +133,11 @@ const MissionVision = () => {
             <Image src={Logo} alt='logo' className='mx-auto h-1/3 w-1/3' />
 
             <div className='sm:mr-8'>
-              <h2
-                className={`font-duke-charming text-2xl font-bold text-theme-700 md:text-3xl`}
-              >
+              <h2 className='font-duke-charming text-xl font-bold text-theme-700 md:text-3xl'>
                 Empowering Every Child
               </h2>
 
-              <p className='text-theme-700 sm:mt-4 sm:block md:font-semibold'>
+              <p className='px-4 text-xs text-theme-700 sm:mt-4 sm:block md:text-base'>
                 Join us on our journey to create a future where every family is
                 supported, and every child has the chance to explore, learn, and
                 grow, contributing to a more inclusive and understanding world.

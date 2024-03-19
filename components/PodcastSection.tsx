@@ -8,11 +8,11 @@ const PodcastSection = () => {
       <div className='p-8 md:p-12 lg:px-16 lg:py-24'>
         <div className='mx-auto flex max-w-3xl flex-col items-center text-center sm:flex-row'>
           <div className='sm:mr-8'>
-            <h2 className='text-xl font-bold md:text-2xl'>
+            <h2 className='text-xl font-bold text-theme-800 md:text-2xl'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit
             </h2>
 
-            <p className='hidden text-sm sm:mt-4 sm:block md:text-base'>
+            <p className='hidden text-sm text-theme-700 sm:mt-4 sm:block md:text-base'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
               egestas tempus tellus etiam sed. Quam a scelerisque amet
               ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat

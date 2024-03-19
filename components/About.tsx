@@ -32,9 +32,7 @@ const About = () => {
   return (
     <section id='about'>
       <div className='animate relative mx-auto max-w-screen-xl sm:px-6 lg:px-8 lg:py-16'>
-        <div
-          className={`absolute right-1/2 top-5 translate-x-1/2 font-duke-charming text-3xl tracking-wider sm:text-5xl md:-top-5 lg:-top-[70px] lg:text-7xl`}
-        >
+        <div className='absolute right-1/2 top-5 translate-x-1/2 font-duke-charming text-3xl tracking-wider text-theme-700 sm:text-5xl md:-top-5 lg:-top-[70px] lg:text-7xl'>
           About Us
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2'>
@@ -70,13 +68,13 @@ const About = () => {
             <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
             <div className='p-8 sm:p-10 lg:p-12'>
-              <h2 className='text-2xl font-bold sm:text-xl'>
+              <h2 className='text-2xl font-bold text-theme-700 sm:text-xl'>
                 Started with Ariel, therapist, and her team seeing gaps in the
                 resources and care locally for our children and families with
                 unique abilities.
               </h2>
 
-              <p className='mt-4 text-black'>
+              <p className='mt-4 text-theme-600'>
                 Ariel and her family love to travel the world and is always
                 pondering on her trips about how these adventures could be
                 accessible for children and their families. the idea is that
@@ -118,13 +116,13 @@ const About = () => {
               <span className='hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-theme-primary/25'></span>
 
               <div className='p-8 sm:p-16 lg:p-24'>
-                <h2 className='text-lg font-bold'>
+                <h2 className='text-lg font-bold text-theme-700'>
                   Started with Ariel, therapist, and her team seeing gaps in the
                   resources and care locally for our children and families with
                   unique abilities.
                 </h2>
 
-                <p className='mt-4 text-black'>
+                <p className='mt-4 text-theme-500'>
                   Ariel and her family love to travel the world and is always
                   pondering on her trips about how these adventures could be
                   accessible for children and their families. the idea is that

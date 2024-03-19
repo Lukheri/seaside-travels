@@ -7,7 +7,7 @@ const Testimonials = () => {
         <p className='text-xl font-medium text-theme-500 '>Testimonials</p>
 
         <div>
-          <h1 className='font-duke-charming text-2xl font-semibold capitalize text-gray-800 lg:text-3xl'>
+          <h1 className='font-duke-charming text-2xl font-semibold capitalize text-theme-800 lg:text-3xl'>
             What our Volunteers are saying
           </h1>
 

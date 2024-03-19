@@ -7,6 +7,12 @@
   src: url("../assets/fonts/Duke Charming DEMO.otf");
 }
 
+@layer base {
+  html {
+    @apply text-theme-800
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

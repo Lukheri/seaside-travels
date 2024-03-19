@@ -5,7 +5,7 @@ const Team = () => {
     <section className=''>
       <div className='mt-8 h-[32rem]'>
         <div className='container mx-auto px-6 py-10'>
-          <h1 className='font-duke-charming text-center text-3xl font-semibold capitalize text-gray-800 lg:text-5xl'>
+          <h1 className='text-center font-duke-charming text-3xl font-semibold capitalize lg:text-5xl'>
             Meet the Team
           </h1>
 

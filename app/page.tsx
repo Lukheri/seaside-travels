@@ -11,7 +11,7 @@ import MissionVision from '@/components/MissionVision'
 
 export default function Home() {
   return (
-    <main className=''>
+    <main className='text-theme-800'>
       <HeroBanner />
       <About />
       <MissionVision />

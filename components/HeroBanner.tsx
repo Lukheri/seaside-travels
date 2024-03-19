@@ -11,7 +11,7 @@ const myFont = localFont({
 const HeroBanner = () => {
   return (
     <>
-      <div className='relative h-screen overflow-hidden'>
+      <div className='relative h-screen min-h-[700px] overflow-hidden'>
         <div className='hero-wave wave1 z-10'></div>
         <div className='hero-wave wave2'></div>
         <div className='hero-wave wave3'></div>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-100'>
+    <footer className='bg-theme-100'>
       <div className='mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8'>
         <Image
           src={Logo}
@@ -15,7 +15,7 @@ const Footer = () => {
           unoptimized
         />
 
-        <p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500'>
+        <p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-theme-500'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
           consequuntur amet culpa cum itaque neque.
         </p>
@@ -23,7 +23,7 @@ const Footer = () => {
         <ul className='mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12'>
           <li>
             <a
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
               href='#merch'
             >
               Merch
@@ -32,7 +32,7 @@ const Footer = () => {
 
           <li>
             <a
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
               href='#about'
             >
               About
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <li>
             <a
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
               href='#podcast'
             >
               Podcast
@@ -50,7 +50,7 @@ const Footer = () => {
 
           <li>
             <a
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
               href='#events'
             >
               Events
@@ -59,7 +59,7 @@ const Footer = () => {
 
           <li>
             <a
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
               href='#donate'
             >
               Donate
@@ -68,7 +68,7 @@ const Footer = () => {
 
           <li>
             <a
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
               href='#'
             >
               Misson & Vision
@@ -82,7 +82,7 @@ const Footer = () => {
               href='https://www.facebook.com/SeasideTherapyFL?mibextid=LQQJ4d'
               rel='noreferrer'
               target='_blank'
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
             >
               <span className='sr-only'>Facebook</span>
               <svg
@@ -105,7 +105,7 @@ const Footer = () => {
               href='https://www.instagram.com/seasidetherapyfl?igsh=MWMxbm4xb2UxMmRjbg%3D%3D&utm_source=qr'
               rel='noreferrer'
               target='_blank'
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
             >
               <span className='sr-only'>Instagram</span>
               <svg
@@ -128,7 +128,7 @@ const Footer = () => {
               href='https://www.tiktok.com/@wavesofwisdomfl?_t=8kcGUz93mWl&_r=1'
               rel='noreferrer'
               target='_blank'
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
             >
               <span className='sr-only'>Tiktok</span>
               <svg
@@ -147,7 +147,7 @@ const Footer = () => {
               href='https://youtube.com/@WavesofWisdomFL?si=j3ttR5OX1NRUrc0i'
               rel='noreferrer'
               target='_blank'
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
             >
               <span className='sr-only'>Youtube</span>
               <svg
@@ -166,7 +166,7 @@ const Footer = () => {
               href='https://open.spotify.com/show/7f1rXKHkqn5Ar4csAhcIe3?si=1535756476d64237'
               rel='noreferrer'
               target='_blank'
-              className='text-gray-700 transition hover:text-gray-700/75'
+              className='text-theme-700 transition hover:text-theme-700/75'
             >
               <span className='sr-only'>Spotify</span>
               <svg
