@@ -14,7 +14,7 @@ const Contact = () => {
             //   backgroundRepeat: 'no-repeat',
             // }}
           >
-            <h1 className='text-2xl font-semibold capitalize text-gray-800 lg:text-3xl'>
+            <h1 className='font-duke-charming text-2xl font-semibold capitalize text-gray-800 lg:text-3xl'>
               Contact us for <br /> more info
             </h1>
 
