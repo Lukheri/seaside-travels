@@ -75,23 +75,25 @@ const Volunteer = () => {
           </div>
         </div>
       </motion.section>
-      <motion.section
-        initial={{
-          opacity: 0,
-          x: 100,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
+      <section
         id='events'
         className='relative flex flex-wrap lg:h-screen lg:items-center'
       >
-        <div className='w-full px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:w-1/2 lg:px-8 lg:pb-24 lg:pt-16'>
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}
+          className='w-full px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:w-1/2 lg:px-8 lg:pb-24 lg:pt-16'
+        >
           <div className='mx-auto max-w-lg text-center'>
             <Image src={Logo} alt='logo' className='mx-auto h-1/2 w-1/2' />
             <h1 className='font-duke-charming text-2xl font-bold sm:text-3xl'>
@@ -190,7 +192,7 @@ const Volunteer = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
 
         <div className='relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2'>
           <img
@@ -199,7 +201,7 @@ const Volunteer = () => {
             className='absolute inset-0 h-full w-full object-cover'
           />
         </div>
-      </motion.section>
+      </section>
     </>
   )
 }
