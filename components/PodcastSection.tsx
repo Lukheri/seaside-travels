@@ -9,17 +9,17 @@ const PodcastSection = () => {
         <div className='mx-auto flex max-w-3xl flex-col items-center text-center sm:flex-row'>
           <div className='sm:mr-8'>
             <h2 className='text-xl font-bold text-theme-800 md:text-2xl'>
-              Welcome to 'Waves of Wisdom' where understanding meets compassion
-              in the realm of neurodiversity.
+              Welcome to <span className=''>Waves of Wisdom</span> where
+              understanding meets compassion in the realm of neurodiversity.
             </h2>
 
             <p className='hidden text-sm text-theme-700 sm:mt-4 sm:block md:text-base'>
-              🎙️ Join us on this enlightening journey as we navigate the seas of
+              Join us on this enlightening journey as we navigate the seas of
               diverse minds, embracing unique perspectives, and sharing stories
               that inspire, educate, and uplift. From heartfelt conversations to
               expert insights, our podcast is your compass in the world of
-              supporting neurodiversity. 🌈💙 Dive deep with us and ride the
-              waves of wisdom!
+              supporting neurodiversity. Dive deep with us and ride the waves of
+              wisdom!
             </p>
           </div>
 
