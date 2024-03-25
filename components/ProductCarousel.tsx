@@ -27,7 +27,7 @@ const fadeInAnimationVariants = {
 const ProductCarousel = () => {
   return (
     <>
-      <div className='flex h-[400px] justify-center'>
+      <div className='flex h-[540px] justify-center overflow-visible'>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
