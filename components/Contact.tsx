@@ -6,6 +6,7 @@ const Contact = () => {
   const [email, setEmail] = useState<string>('')
   const [message, setMessage] = useState<string>('')
   const [errors, setErrors] = useState<{ email?: string; message?: string }>({})
+  const [isSending, setIsSending] = useState<boolean>(false)
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -26,8 +27,9 @@ const Contact = () => {
     }
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setIsSending(true)
 
     const newErrors: { email?: string; message?: string } = {}
     if (!email.trim()) {
@@ -42,6 +44,7 @@ const Contact = () => {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors)
+      setIsSending(false)
       return
     }
 
@@ -50,6 +53,19 @@ const Contact = () => {
       email,
       message,
     }
+
+    await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: fullName,
+        email: email,
+        message: message,
+      }),
+    }).then(() => setIsSending(false))
+
     console.log(formData)
   }
 
