@@ -1,74 +1,7 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
+import ContactForm from './ContactForm'
 
 const Contact = () => {
-  const [fullName, setFullName] = useState<string>('')
-  const [email, setEmail] = useState<string>('')
-  const [message, setMessage] = useState<string>('')
-  const [errors, setErrors] = useState<{ email?: string; message?: string }>({})
-  const [isSending, setIsSending] = useState<boolean>(false)
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target
-    if (name === 'fullName') {
-      setFullName(value)
-    } else if (name === 'email') {
-      setEmail(value)
-      if (errors.email) {
-        setErrors((prevErrors) => ({ ...prevErrors, email: '' }))
-      }
-    } else if (name === 'message') {
-      setMessage(value)
-      if (errors.message) {
-        setErrors((prevErrors) => ({ ...prevErrors, message: '' }))
-      }
-    }
-  }
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSending(true)
-
-    const newErrors: { email?: string; message?: string } = {}
-    if (!email.trim()) {
-      newErrors.email = 'Email is required'
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = 'Email is invalid'
-    }
-
-    if (!message.trim()) {
-      newErrors.message = 'Message is required'
-    }
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors)
-      setIsSending(false)
-      return
-    }
-
-    const formData = {
-      fullName,
-      email,
-      message,
-    }
-
-    await fetch('/api/send', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: fullName,
-        email: email,
-        message: message,
-      }),
-    }).then(() => setIsSending(false))
-
-    console.log(formData)
-  }
-
   return (
     <section className='' id='contact-us'>
       <div className='container mx-auto px-6 py-12'>
@@ -150,73 +83,7 @@ const Contact = () => {
           </div>
 
           <div className='mt-8 lg:mx-6 lg:w-1/2'>
-            <div className='mx-auto w-full overflow-hidden rounded-lg bg-white px-4 py-6 shadow-2xl shadow-gray-300/50 lg:max-w-xl lg:px-8 lg:py-10 '>
-              <h1 className='text-lg font-medium text-gray-700'>
-                What do you want to ask
-              </h1>
-
-              <form className='mt-6' onSubmit={handleSubmit}>
-                <div className='flex-1'>
-                  <label className='mb-2 block text-sm text-gray-600'>
-                    Full Name
-                  </label>
-                  <input
-                    type='text'
-                    name='fullName'
-                    placeholder='John Doe'
-                    className='mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-theme-400 focus:outline-none focus:ring focus:ring-theme-400 focus:ring-opacity-40'
-                    value={fullName}
-                    onChange={handleInputChange}
-                  />
-                </div>
-
-                <div className='mt-6 flex-1'>
-                  <label className='mb-2 block text-sm text-gray-600'>
-                    Email address
-                  </label>
-                  <input
-                    type='email'
-                    name='email'
-                    placeholder='johndoe@example.com'
-                    className={`mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-theme-400 focus:outline-none focus:ring focus:ring-theme-400 focus:ring-opacity-40 ${
-                      errors.email ? 'border-red-500' : ''
-                    }`}
-                    value={email}
-                    onChange={handleInputChange}
-                  />
-                  {errors.email && (
-                    <p className='mt-1 text-sm text-red-500'>{errors.email}</p>
-                  )}
-                </div>
-
-                <div className='mt-6 w-full'>
-                  <label className='mb-2 block text-sm text-gray-600'>
-                    Message
-                  </label>
-                  <textarea
-                    name='message'
-                    className={`mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-theme-400 focus:outline-none focus:ring focus:ring-theme-400 focus:ring-opacity-40 md:h-48 ${
-                      errors.message ? 'border-red-500' : ''
-                    }`}
-                    placeholder='Message'
-                    value={message}
-                    onChange={handleInputChange}
-                  ></textarea>
-                  {errors.message && (
-                    <p className='mt-1 text-sm text-red-500'>
-                      {errors.message}
-                    </p>
-                  )}
-                </div>
-
-                <button
-                  type='submit'
-                  className='mt-6 w-full transform rounded-md bg-theme-500 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-theme-400 focus:outline-none focus:ring focus:ring-theme-300 focus:ring-opacity-50'
-                >
-                  get in touch
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>

@@ -8,7 +8,6 @@ export async function POST(req: Request) {
 
   const {name, email, message} = body
 
-  console.log(name, email, message)
   const subject = `${!!name ? name : "Anonymous user"} Contacted us`
   try {
     const data = await resend.emails.send({
