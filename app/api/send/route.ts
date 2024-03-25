@@ -1,4 +1,4 @@
-import EmailTemplate from '@/components/EmailTemplate';
+import ContactTemplate from '@/components/ContactTemplate';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       from: 'Seaside Travels Inquiry <contact@resend.dev>',
       to: ['luke.contrivida@gmail.com'],
       subject: subject,
-      react: EmailTemplate({name, email, message}),
+      react: ContactTemplate({name, email, message}),
     });
 
     return Response.json(data);
