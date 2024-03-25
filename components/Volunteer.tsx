@@ -77,7 +77,7 @@ const Volunteer = () => {
       </motion.section>
       <section
         id='events'
-        className='relative flex flex-wrap lg:h-screen lg:items-center'
+        className='relative flex flex-wrap overflow-hidden lg:h-screen lg:items-center lg:overflow-visible'
       >
         <motion.div
           initial={{

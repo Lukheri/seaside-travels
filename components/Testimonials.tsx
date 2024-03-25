@@ -45,7 +45,7 @@ const Testimonials = () => {
           </div>
         </main>
       </div>
-      <div className='container mx-auto px-6 py-10'>
+      {/* <div className='container mx-auto px-6 py-10'>
         <section className='mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 xl:mt-12 xl:grid-cols-3'>
           <div className='rounded-lg border p-8'>
             <p className='text-sm leading-loose text-gray-500'>
@@ -119,7 +119,7 @@ const Testimonials = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </section>
   )
 }
