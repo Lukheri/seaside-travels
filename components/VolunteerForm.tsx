@@ -5,9 +5,11 @@ import Logo from '@/public/icons/logo.png'
 import Image from 'next/image'
 import addData from '@/app/firebase/firestore/addData'
 import { v4 as uuidv4 } from 'uuid'
+import Alert from './Alert'
 
 const VolunteerForm = () => {
   const [email, setEmail] = useState<string>('')
+  const [success, setSuccess] = useState<boolean>(false)
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value as string)
@@ -26,6 +28,7 @@ const VolunteerForm = () => {
       return console.log(error)
     }
 
+    setSuccess(true)
     setEmail('')
   }
 
@@ -61,6 +64,7 @@ const VolunteerForm = () => {
         onSubmit={registerEmail}
         className='mx-auto mb-0 mt-8 max-w-md space-y-4'
       >
+        {success && <Alert text='Successfully registered!' type='success' />}
         <div>
           <label htmlFor='email' className='sr-only'>
             Email

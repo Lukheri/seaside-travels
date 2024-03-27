@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Alert from './Alert'
 
 const ContactForm = () => {
   const [fullName, setFullName] = useState<string>('')
@@ -74,24 +75,7 @@ const ContactForm = () => {
 
   return (
     <div className='relative mx-auto w-full overflow-hidden rounded-lg bg-white px-4 py-6 shadow-2xl shadow-gray-300/50 lg:max-w-xl lg:px-8 lg:py-10 '>
-      {success && (
-        <div role='alert' className='alert border-none bg-theme-accent'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6 shrink-0 stroke-current'
-            fill='none'
-            viewBox='0 0 24 24'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-            />
-          </svg>
-          <span>Your message has been sent!</span>
-        </div>
-      )}
+      {success && <Alert text='Your message has been sent!' type='success' />}
       <h1 className='mt-4 text-lg font-medium text-gray-700'>
         What do you want to ask
       </h1>
