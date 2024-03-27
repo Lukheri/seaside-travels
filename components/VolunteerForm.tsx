@@ -4,12 +4,29 @@ import React, { useState } from 'react'
 import Logo from '@/public/icons/logo.png'
 import Image from 'next/image'
 import addData from '@/app/firebase/firestore/addData'
+import { v4 as uuidv4 } from 'uuid'
 
 const VolunteerForm = () => {
   const [email, setEmail] = useState<string>('')
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value as string)
+  }
+
+  const registerEmail = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    const data = {
+      email: email,
+    }
+
+    const { error } = await addData('registered-emails', uuidv4(), data)
+
+    if (error) {
+      return console.log(error)
+    }
+
+    setEmail('')
   }
 
   return (
@@ -40,7 +57,10 @@ const VolunteerForm = () => {
         </p>
       </div>
 
-      <form action='#' className='mx-auto mb-0 mt-8 max-w-md space-y-4'>
+      <form
+        onSubmit={registerEmail}
+        className='mx-auto mb-0 mt-8 max-w-md space-y-4'
+      >
         <div>
           <label htmlFor='email' className='sr-only'>
             Email
@@ -74,12 +94,36 @@ const VolunteerForm = () => {
         </div>
 
         <div className='flex items-center justify-end'>
-          <button
-            type='submit'
-            className='inline-block rounded-lg bg-theme-600 px-5 py-3 text-sm font-medium text-white'
-          >
+          <button type='submit' className='c-button c-button--gooey'>
             Register now
+            <div className='c-button__blobs'>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </button>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            version='1.1'
+            style={{ display: 'block', height: 0, width: 0 }}
+          >
+            <defs>
+              <filter id='goo'>
+                <feGaussianBlur
+                  in='SourceGraphic'
+                  stdDeviation='10'
+                  result='blur'
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in='blur'
+                  mode='matrix'
+                  values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7'
+                  result='goo'
+                ></feColorMatrix>
+                <feBlend in='SourceGraphic' in2='goo'></feBlend>
+              </filter>
+            </defs>
+          </svg>
         </div>
       </form>
     </motion.div>
