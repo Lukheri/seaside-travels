@@ -20,15 +20,22 @@ const VolunteerForm = () => {
   const registerEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
+    console.log(emailValidator.test(email))
+
     if (emailValidator.test(email)) {
       setValidEmail(true)
+      console.log('hey')
     } else {
       setValidEmail(false)
+      setSuccess(false)
       return
     }
+    const id = uuidv4()
 
     const data = {
       email: email,
+      id: id,
+      verified: false,
     }
 
     const { error } = await addData('registered-emails', uuidv4(), data)
@@ -38,6 +45,7 @@ const VolunteerForm = () => {
     }
 
     setSuccess(true)
+    setValidEmail(true)
     setEmail('')
   }
 

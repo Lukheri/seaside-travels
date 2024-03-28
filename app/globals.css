@@ -560,4 +560,5 @@ html{
 
 .c-button--gooey:active{
   transform: scale(0.96);
+  transition: all 100ms ease;
 }
