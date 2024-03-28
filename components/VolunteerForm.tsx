@@ -6,10 +6,12 @@ import Image from 'next/image'
 import addData from '@/app/firebase/firestore/addData'
 import { v4 as uuidv4 } from 'uuid'
 import Alert from './Alert'
+import emailValidator from '@sefinek/email-validator'
 
 const VolunteerForm = () => {
   const [email, setEmail] = useState<string>('')
   const [success, setSuccess] = useState<boolean>(false)
+  const [validEmail, setValidEmail] = useState<boolean>(true)
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value as string)
@@ -17,6 +19,13 @@ const VolunteerForm = () => {
 
   const registerEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+
+    if (emailValidator.test(email)) {
+      setValidEmail(true)
+    } else {
+      setValidEmail(false)
+      return
+    }
 
     const data = {
       email: email,
@@ -65,6 +74,9 @@ const VolunteerForm = () => {
         className='mx-auto mb-0 mt-8 max-w-md space-y-4'
       >
         {success && <Alert text='Successfully registered!' type='success' />}
+        {!validEmail && (
+          <Alert text='Please enter a valid email' type='error' />
+        )}
         <div>
           <label htmlFor='email' className='sr-only'>
             Email

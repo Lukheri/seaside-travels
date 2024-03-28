@@ -4,18 +4,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import VolunteerForm from './VolunteerForm'
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    x: 50,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transiton: { duration: 1 },
-  },
-}
-
 const Volunteer = () => {
   return (
     <>
